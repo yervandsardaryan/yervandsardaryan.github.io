@@ -38,6 +38,19 @@
 .bi-note{font-size:13px;color:var(--muted);margin-top:24px}
 @media(max-width:800px){.bi-cards{grid-template-columns:1fr}.bi-card{min-height:auto}}
 .bi-download{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-align:center;text-decoration:none;color:#071d1a!important;background:var(--accent);border:1px solid var(--accent);border-radius:11px;padding:12px 13px;font-weight:700;font-size:12px;line-height:1.35;margin:3px 0 9px;transition:filter .2s ease}.bi-download:hover{filter:brightness(1.13)}.bi-download-hint{display:block;font-size:11px;color:var(--muted);line-height:1.5;margin-bottom:18px}
+
+.bi-feature{border:1px solid var(--line);border-radius:18px;background:var(--panel);overflow:hidden;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,1fr);margin:22px 0 18px}
+.bi-preview{display:flex;flex-direction:column;position:relative;justify-content:center;background:#151515;text-decoration:none;min-width:0;overflow:hidden}
+.bi-preview img{display:block;width:100%;height:auto;object-fit:contain}
+.bi-preview span{position:absolute;bottom:14px;left:14px;padding:9px 12px;border-radius:9px;background:rgba(12,25,39,.93);border:1px solid #486176;color:#dceafa;font-size:12px;font-weight:700}
+.bi-feature-copy{padding:25px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.bi-feature-copy .bi-eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.bi-feature-copy h3{font-size:23px;line-height:1.25;margin:0}
+.bi-feature-copy p{font-size:14px;color:var(--muted);line-height:1.65;margin:0}
+.bi-feature-copy .bi-tags{margin-top:0}
+.bi-feature-copy .bi-download{align-self:flex-start;margin:4px 0 0}
+.bi-feature-copy .bi-download-hint{margin:0}
+@media(max-width:950px){.bi-feature{grid-template-columns:1fr}.bi-preview img{max-height:none}}
 </style>
 </head>
 <body>
@@ -64,8 +77,23 @@
 <h2>From business questions<br/>to actionable insights.</h2>
 <p class="bi-intro">I bring business analysis and data analytics together to define meaningful KPIs, translate reporting requirements into clear metrics, and communicate insights. My toolkit includes Power BI, SQL, Excel, Tableau, Snowflake and data modeling techniques.</p>
 <div class="bi-highlight"><h3>Power BI &amp; analytics workflow</h3><p>Business questions &rarr; KPI definitions &rarr; data preparation &amp; modeling &rarr; DAX measures &rarr; visual storytelling &rarr; business decisions. My portfolio reports can be showcased here as screenshots, documented case studies, and downloadable PBIX files &mdash; without requiring Microsoft cloud embedding.</p></div>
+<article class="bi-feature" aria-labelledby="payment-title">
+  <a class="bi-preview" href="PaymentTransactionAnalytics_Dashboard.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Power BI dashboard screenshot">
+    <img src="PaymentTransactionAnalytics_Dashboard.png" alt="Power BI Payment Transaction Analytics dashboard with KPI cards, cumulative transaction trend, transaction volumes by channel, and decline reason analysis" loading="lazy" width="1366" height="757" />
+    <span>View full dashboard preview ↗</span>
+  </a>
+  <div class="bi-feature-copy">
+    <span class="bi-eyebrow">Completed Power BI report · Synthetic data</span>
+    <h3 id="payment-title">Payment Transaction Analytics</h3>
+    <p>Explore payment activity, authorization and decline rates, processing time, payment channel performance, and the leading reasons for declined transactions.</p>
+    <p><strong>Included analysis:</strong> Executive KPI cards, cumulative transaction trend, transactions by channel, decline reason breakdown, and channel comparison.</p>
+    <a class="bi-download" href="PaymentTransactionAnalytics.pbix" download="PaymentTransactionAnalytics.pbix">↓ Download Power BI report (.pbix)</a>
+    <span class="bi-download-hint">Open in free Power BI Desktop. The screenshot is a static preview, not an embedded interactive report.</span>
+    <div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>Payment Analytics</span><span>Data Visualization</span><span>Synthetic Data</span></div>
+  </div>
+</article>
 <div class="bi-cards" aria-label="Planned analytics case studies">
-<article class="bi-card"><span class="bi-eyebrow">Completed report · Download available</span><h3>Payment Transaction Analytics</h3><p>An interactive Power BI Desktop report exploring transaction volume, authorization and decline rates, payment channels, decline reasons, and operational performance with synthetic payments data.</p><p><strong>Report highlights:</strong> KPI summary cards, transaction trend, payment channel comparisons, and decline analysis.</p><a class="bi-download" href="PaymentTransactionAnalytics.pbix" download="PaymentTransactionAnalytics.pbix" aria-label="Download Payment Transaction Analytics Power BI report">↓ Download Power BI report (.pbix)</a><span class="bi-download-hint">Requires free Power BI Desktop to open; not an online embedded report.</span><div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>Payments KPIs</span><span>Synthetic Data</span></div></article>
+
 <article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Fraud &amp; Risk Monitoring</h3><p>Explore fraud alerts, confirmed cases, risk segments, detection trends, and false positives while balancing protection with customer experience.</p><div class="bi-tags"><span>Power BI</span><span>Risk Analytics</span><span>KPI Design</span></div></article>
 <article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Core Banking Performance</h3><p>Model an executive view of customers, loans, deposits, portfolio health, and servicing trends, with business-friendly definitions for each measure.</p><div class="bi-tags"><span>Power BI</span><span>Banking</span><span>Data Modeling</span></div></article>
 </div>
