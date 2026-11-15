@@ -125,7 +125,7 @@
 <div class="section-kicker">06 / Data Analytics &amp; Power BI</div>
 <h2>From business questions<br/>to actionable insights.</h2>
 <p class="bi-intro">I bring business analysis and data analytics together to define meaningful KPIs, translate reporting requirements into clear metrics, and communicate insights. My toolkit includes Power BI, SQL, Excel, Tableau, Snowflake and data modeling techniques.</p>
-<div class="bi-highlight"><h3>Power BI &amp; analytics workflow</h3><p>Business questions &rarr; KPI definitions &rarr; data preparation &amp; modeling &rarr; DAX measures &rarr; visual storytelling &rarr; business decisions. My portfolio reports can be showcased here as screenshots, documented case studies, and downloadable PBIX files &mdash; without requiring Microsoft cloud embedding.</p></div>
+<div class="bi-highlight"><h3>Power BI &amp; analytics workflow</h3><p>Business questions &rarr; KPI definitions &rarr; data preparation &amp; modeling &rarr; DAX measures &rarr; visual storytelling &rarr; business decisions. My portfolio reports can be showcased here as screenshots, documented case studies, and visual dashboard previews and documented case studies &mdash; without requiring Microsoft cloud embedding.</p></div>
 <article class="bi-feature" aria-labelledby="payment-title">
   <a class="bi-preview" href="PaymentTransactionAnalyticsBI.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Power BI dashboard screenshot">
     <img src="PaymentTransactionAnalyticsBI.png" alt="Payment Transaction Analytics Power BI report with KPI cards, country transaction bubble map, geographic transaction share chart, channel volumes, decline analysis and cumulative transaction trends" loading="lazy" width="959" height="528" />
@@ -136,8 +136,8 @@
     <h3 id="payment-title">Payment Transaction Analytics</h3>
     <p>Explore payment activity, authorization and decline rates, processing time, payment channel performance, geographic transaction distribution, and the leading reasons for declined transactions.</p>
     <p><strong>Included analysis:</strong> Executive KPI cards, a country-level payment volume map, geographic transaction share by country, cumulative transaction trends, channel comparisons, and decline reason analysis.</p>
-    <a class="bi-download" href="PaymentTransactionAnalyticsBI.pbix" download="PaymentTransactionAnalyticsBI.pbix">↓ Download Power BI report (.pbix)</a>
-    <span class="bi-download-hint">Open in free Power BI Desktop. The screenshot is a static preview, not an embedded interactive report.</span>
+    <a class="bi-download" href="PaymentTransactionAnalyticsBI.png" target="_blank" rel="noopener noreferrer">↗ View dashboard preview</a>
+    <span class="bi-download-hint">Full-size dashboard preview · Original report and data are stored privately.</span>
     <div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>Payment Analytics</span><span>Geographic Analytics</span><span>Data Visualization</span><span>Synthetic Data</span></div>
   </div>
 </article>
@@ -146,7 +146,7 @@
 <article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Fraud &amp; Risk Monitoring</h3><p>Explore fraud alerts, confirmed cases, risk segments, detection trends, and false positives while balancing protection with customer experience.</p><div class="bi-tags"><span>Power BI</span><span>Risk Analytics</span><span>KPI Design</span></div></article>
 <article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Core Banking Performance</h3><p>Model an executive view of customers, loans, deposits, portfolio health, and servicing trends, with business-friendly definitions for each measure.</p><div class="bi-tags"><span>Power BI</span><span>Banking</span><span>Data Modeling</span></div></article>
 </div>
-<p class="bi-note">Payment Transaction Analytics is a completed downloadable Power BI Desktop report built with synthetic data. Fraud &amp; Risk Monitoring and Core Banking Performance remain proposed case studies. Public browser interaction requires a separate web demo or Power BI publishing access.</p>
+<p class="bi-note">Payment Transaction Analytics is a completed Power BI Desktop case study built with synthetic data. Fraud &amp; Risk Monitoring and Core Banking Performance remain proposed case studies. Public browser interaction requires a separate web demo or Power BI publishing access.</p>
 </div></section>
 
 <section class="content" id="bpmn"><div class="container">
@@ -161,9 +161,9 @@
     </div><span class="bpmn-chip">BPMN 2.0 · Digital Banking</span></div>
     <div class="bpmn-stat-grid"><div class="bpmn-stat"><strong>15 min</strong><span>Code validity window</span></div><div class="bpmn-stat"><strong>One use</strong><span>Atomic redemption control</span></div><div class="bpmn-stat"><strong>3 pools</strong><span>Customer · Bank · ATM</span></div></div>
     <a class="bpmn-diagram" href="Cardless_ATM_Withdrawal_BPMN.svg" target="_blank" rel="noopener noreferrer" aria-label="View full-size cardless ATM withdrawal BPMN diagram"><img src="Cardless_ATM_Withdrawal_BPMN.svg" alt="BPMN swimlane process overview showing customer, mobile app, digital banking backend, core banking, and ATM interactions, with code validation, 15-minute expiry, and dispense confirmation" width="2040" height="920" loading="lazy"/></a>
-    <p class="bpmn-caption">Click the diagram to view it full size. This is an illustrative process overview; the editable draw.io file provides the source for further refinement. Solid lines represent internal sequence flows and dashed lines represent inter-participant messages.</p>
+    <p class="bpmn-caption">Click the diagram to view it full size. This is an illustrative process overview; the editable source is kept private. Solid lines represent internal sequence flows and dashed lines represent inter-participant messages.</p>
     <div class="bpmn-details"><div class="bpmn-panel"><h4>Business rules &amp; controls</h4><ul><li>Generate the code only after authenticating the user and validating account eligibility, balance and limits.</li><li>Expire exactly 15 minutes after code generation; a code is invalid at or after its expiry timestamp.</li><li>Bind the code to the requested account and withdrawal amount; prevent parallel or repeated redemption.</li><li>Verify the code at the ATM and recheck available funds before authorizing cash dispensing.</li></ul></div><div class="bpmn-panel"><h4>Exceptions &amp; system behavior</h4><ul><li>Reject incorrect, expired or already-used codes; surface clear customer-facing messages.</li><li>Handle insufficient funds, limits and ATM cash shortages before dispensing.</li><li>Reserve or debit funds under controlled transaction rules; reconcile dispense failures and uncertain ATM responses.</li><li>Record traceable audit events and customer notification after confirmed completion.</li></ul></div></div>
-    <div class="bpmn-actions"><a href="Cardless_ATM_Withdrawal_BPMN.svg" target="_blank" rel="noopener noreferrer">↗ View BPMN diagram</a><a href="Cardless_ATM_Withdrawal_Editable.drawio" download="Cardless_ATM_Withdrawal_Editable.drawio">↓ Download editable draw.io</a><a href="Cardless_ATM_Withdrawal_BPMN.svg" download="Cardless_ATM_Withdrawal_BPMN.svg">↓ Download SVG</a></div>
+    <div class="bpmn-actions"><a href="Cardless_ATM_Withdrawal_BPMN.svg" target="_blank" rel="noopener noreferrer">↗ View BPMN diagram</a></div>
   </article>
   <p class="bi-note">This is a conceptual portfolio model using synthetic requirements; it does not represent a proprietary banking implementation. Final production design would additionally specify security controls, reconciliation policies, ATM network protocols and failure-recovery rules.</p>
 </div></section>
@@ -184,7 +184,7 @@
     <h4 class="lms-mini-title">Upload-to-notification process</h4>
     <a class="lms-flow-preview" href="LMS_Upload_Notification_Flow.png" target="_blank" rel="noopener noreferrer" aria-label="Open upload-to-notification process diagram"><img src="LMS_Upload_Notification_Flow.png" alt="Sequence of upload request, direct storage upload, video transcoding, publishing, student notification and playback" loading="lazy"></a>
     <div class="lms-grid"><div class="lms-tile"><h4>API &amp; authorization</h4><p>REST endpoints for upload authorization, metadata confirmation, course video lists, streaming access and deletion. Role-based and course-enrollment checks protect every action; signed upload and playback URLs are short-lived.</p></div><div class="lms-tile"><h4>Reliability &amp; asynchronous design</h4><p>Direct multipart uploads avoid routing large media through the API. Workers transcode to adaptive HLS formats; the READY state gates publication. Queue consumers batch notifications, deduplicate retries and route failures to a DLQ.</p></div></div>
-    <div class="lms-actions"><a href="lms-integration.html">↗ Read full case study</a><a href="LMS_Integration_Architecture.svg" target="_blank" rel="noopener noreferrer">↗ View architecture (SVG)</a><a href="LMS_Upload_Notification_Flow.svg" target="_blank" rel="noopener noreferrer">↗ View upload flow (SVG)</a><a href="LMS_API_Endpoint_Specification.md" download>↓ Download API outline</a></div>
+    <div class="lms-actions"><a href="lms-integration.html">↗ Read full case study</a><a href="LMS_Integration_Architecture.svg" target="_blank" rel="noopener noreferrer">↗ View architecture (SVG)</a><a href="LMS_Upload_Notification_Flow.svg" target="_blank" rel="noopener noreferrer">↗ View upload flow (SVG)</a></div>
   </article>
   <p class="bi-note">Illustrative portfolio case study only — no real student records, institutional systems, actual SLA measurements or claimed deployed outcomes.</p>
 </div></section>
