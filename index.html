@@ -103,6 +103,25 @@
 
 /* Business Analysis Knowledge Guide card CTA */
 .knowledge-card-link{display:inline-flex;align-items:center;gap:8px;margin-top:18px;color:var(--accent);font-weight:800;font-size:13px;border-bottom:1px solid rgba(88,225,182,.5);padding-bottom:3px}.knowledge-card-link:hover{color:#b2ffdf;border-bottom-color:#b2ffdf}.knowledge-card-link:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+
+/* Left-side vertical navigation — layout only; content and link order remain unchanged. */
+@media(min-width:1001px){
+  body{padding-left:232px}
+  .nav{position:fixed;top:0;left:0;bottom:0;width:232px;height:100vh;z-index:20;border-right:1px solid #ffffff1b;border-bottom:0;overflow-y:auto;overflow-x:hidden;background:#0b1120f5}
+  .nav-inner{width:100%;height:auto;min-height:100vh;max-width:none;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:28px;padding:31px 18px 24px}
+  .nav .logo{display:block;align-self:flex-start;padding:0 11px}
+  .nav-links{display:flex!important;flex-direction:column;align-items:stretch;gap:5px;width:100%;font-size:13px}
+  .nav-links a{display:block;padding:10px 11px;border-radius:9px;white-space:normal;line-height:1.4}
+  .nav-links a:hover,.nav-links a:focus-visible{background:#1d3046;color:var(--accent)}
+  .nav-links .nav-contact{margin-top:13px;text-align:center;padding:11px 8px}
+  .menu{display:none!important}
+}
+@media(min-width:651px) and (max-width:1000px){
+  .menu{display:block}
+  .nav-links{display:none;position:absolute;top:75px;left:0;right:0;background:#111c2e;padding:20px;flex-direction:column;align-items:stretch;gap:12px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+}
+
 </style>
 </head>
 <body>
