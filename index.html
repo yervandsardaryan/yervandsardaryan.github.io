@@ -86,6 +86,20 @@
 .lms-actions{display:flex;gap:12px;flex-wrap:wrap;margin:0 30px 30px}.lms-actions a{padding:12px 16px;border-radius:10px;border:1px solid #45657b;color:#edf7ff;font-size:13px;font-weight:800}.lms-actions a:first-child{color:#08271f;background:var(--accent);border-color:var(--accent)}.lms-actions a:hover{filter:brightness(1.12)}
 @media(max-width:730px){.lms-head{padding:22px 18px 10px}.lms-metrics{grid-template-columns:1fr;margin:0 18px 20px}.lms-grid{grid-template-columns:1fr;margin:0 18px 20px}.lms-visual{margin:0 10px 8px}.lms-note{margin:0 18px 20px}.lms-actions{margin:0 18px 22px}}
 
+
+/* LMS visual presentation upgrade */
+.lms-diagram-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin:0 30px 13px}
+.lms-diagram-heading h4{font-size:18px;color:var(--text);margin:0}
+.lms-diagram-heading span{font-size:12px;color:var(--muted)}
+.lms-visual{background:#101d30;padding:12px;margin:0 30px 12px;border:1px solid #365069;box-shadow:0 16px 42px rgba(0,0,0,.12)}
+.lms-visual img{background:#0d1728;display:block;width:100%;height:auto;object-fit:contain;border-radius:7px}
+.lms-visual:hover{border-color:#5ed5bd;filter:brightness(1.04)}
+.lms-actions{padding-top:6px}
+.lms-actions a:focus-visible,.lms-visual:focus-visible{outline:3px solid #72e4c7;outline-offset:4px}
+.lms-flow-preview{margin:0 30px 22px;border:1px solid #34465c;border-radius:12px;padding:12px;background:#101d30;display:block}
+.lms-flow-preview img{display:block;width:100%;height:auto;border-radius:7px}
+.lms-mini-title{font-size:15px;margin:18px 30px 12px;color:var(--text)}
+@media(max-width:730px){.lms-diagram-heading{margin:0 18px 12px}.lms-visual{margin:0 12px 10px;padding:6px}.lms-mini-title{margin:18px 18px 10px}.lms-flow-preview{margin:0 12px 19px;padding:6px}}
 </style>
 </head>
 <body>
@@ -164,10 +178,13 @@
       <p>Replace fragmented lecture videos shared via WhatsApp and email with a course-based platform. Lecturers manage their videos, enrolled students stream them securely, and new published lessons automatically trigger notifications.</p>
     </div>
     <div class="lms-metrics"><div class="lms-metric"><strong>5 REST endpoints</strong><span>Upload · List · Stream · Delete</span></div><div class="lms-metric"><strong>Async media pipeline</strong><span>Multipart upload → HLS transcoding</span></div><div class="lms-metric"><strong>Event-driven alerts</strong><span>Queue · retries · idempotent delivery</span></div></div>
-    <a class="lms-visual" href="LMS_Integration_Architecture.svg" target="_blank" rel="noopener noreferrer" aria-label="Open large LMS integration architecture diagram"><img src="LMS_Integration_Architecture.svg" alt="LMS system integration architecture showing React frontend, REST backend, authentication, PostgreSQL, video storage, transcoding service, CDN, message queue, worker, and notifications" width="1520" height="910" loading="lazy"></a>
-    <p class="lms-note">Click to inspect the architecture in full size. Technology products represent possible implementation choices, not an existing deployed university system.</p>
+    <div class="lms-diagram-heading"><h4>Solution architecture</h4><span>Visual overview · click to enlarge</span></div>
+    <a class="lms-visual" href="LMS_Integration_Architecture.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size LMS integration architecture preview"><img src="LMS_Integration_Architecture.png" alt="Architecture diagram: lecturer and student frontend, authentication, REST API, PostgreSQL, object storage, video processing, CDN and notification queue" width="1900" height="1138" loading="lazy" decoding="async"></a>
+    <p class="lms-note">High-resolution PNG preview for reliable browser display. An editable-quality SVG diagram is also provided separately. This is a conceptual architecture, not a deployed university solution.</p>
+    <h4 class="lms-mini-title">Upload-to-notification process</h4>
+    <a class="lms-flow-preview" href="LMS_Upload_Notification_Flow.png" target="_blank" rel="noopener noreferrer" aria-label="Open upload-to-notification process diagram"><img src="LMS_Upload_Notification_Flow.png" alt="Sequence of upload request, direct storage upload, video transcoding, publishing, student notification and playback" loading="lazy"></a>
     <div class="lms-grid"><div class="lms-tile"><h4>API &amp; authorization</h4><p>REST endpoints for upload authorization, metadata confirmation, course video lists, streaming access and deletion. Role-based and course-enrollment checks protect every action; signed upload and playback URLs are short-lived.</p></div><div class="lms-tile"><h4>Reliability &amp; asynchronous design</h4><p>Direct multipart uploads avoid routing large media through the API. Workers transcode to adaptive HLS formats; the READY state gates publication. Queue consumers batch notifications, deduplicate retries and route failures to a DLQ.</p></div></div>
-    <div class="lms-actions"><a href="lms-integration.html">↗ Explore full case study</a><a href="LMS_Upload_Notification_Flow.svg" target="_blank" rel="noopener noreferrer">View process flow</a><a href="LMS_API_Endpoint_Specification.md" download>↓ Download API outline</a></div>
+    <div class="lms-actions"><a href="lms-integration.html">↗ Read full case study</a><a href="LMS_Integration_Architecture.svg" target="_blank" rel="noopener noreferrer">↗ View architecture (SVG)</a><a href="LMS_Upload_Notification_Flow.svg" target="_blank" rel="noopener noreferrer">↗ View upload flow (SVG)</a><a href="LMS_API_Endpoint_Specification.md" download>↓ Download API outline</a></div>
   </article>
   <p class="bi-note">Illustrative portfolio case study only — no real student records, institutional systems, actual SLA measurements or claimed deployed outcomes.</p>
 </div></section>
