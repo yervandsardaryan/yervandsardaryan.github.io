@@ -20,9 +20,33 @@
   .nav-links a:last-child{margin-top:16px;text-align:center}
 }
 
+
+/* BABOK-aligned study guide extension */
+.bk-intro{color:#b7c7dd;max-width:890px;line-height:1.8}
+.bk-nav{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0 26px}
+.bk-nav a{color:#8bf2d0;border:1px solid #446a73;background:#13293b;padding:9px 13px;border-radius:10px;font-size:12px;font-weight:700}
+.bk-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.bk-card{background:linear-gradient(145deg,#14253b,#111c2e);border:1px solid #31435e;border-radius:16px;padding:22px;min-width:0}
+.bk-card h3{font-size:18px;line-height:1.35;margin:6px 0 12px;color:#f5faff}
+.bk-card p,.bk-card li{color:#b8c9dc;font-size:13px;line-height:1.75}
+.bk-card ul{margin:10px 0;padding-left:19px}
+.bk-ref{font-size:11px;color:#79d6bd;letter-spacing:.01em;margin:12px 0 0}
+.bk-kicker{font-size:11px;color:#5fe2bb;text-transform:uppercase;letter-spacing:1.2px;font-weight:800}
+.bk-example{background:#0c1a2d;border-left:3px solid #65dcb7;border-radius:6px;padding:12px 14px;margin:14px 0 2px;font-size:13px;color:#d0deed;line-height:1.65}
+.bk-example strong{color:#eefcf6}
+.bk-wide{grid-column:1/-1}
+.bk-table-wrap{overflow-x:auto;margin:14px 0}
+.bk-table{width:100%;border-collapse:collapse;font-size:12px;min-width:545px}
+.bk-table th,.bk-table td{text-align:left;border-bottom:1px solid #34465d;padding:10px 11px;vertical-align:top;color:#c4d6e9}
+.bk-table th{color:#94f3d1;background:#1a3043}
+.bk-code{white-space:pre-wrap;overflow-wrap:anywhere;background:#081524;border:1px solid #2b4961;border-radius:10px;color:#d7eeff;font:12px/1.75 Consolas,monospace;padding:13px 15px}
+.bk-disclaimer{font-size:12px;color:#a9bcd0;margin-top:25px;line-height:1.75}
+.bk-steps{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0}
+.bk-steps span{border:1px solid #446079;border-radius:8px;padding:7px 10px;background:#12263b;color:#dceafa;font-size:12px}
+@media(max-width:850px){.bk-grid{grid-template-columns:1fr}.bk-wide{grid-column:auto}}
 </style></head>
-<body><header class="nav"><div class="wrap nav-inner"><a class="logo" href="index.html" aria-label="Portfolio home">YS<i>.</i></a><nav aria-label="Guide navigation" class="nav-links"><a href="#requirements">Requirements Analysis</a><a href="#bpmn">BPMN 2.0</a><a href="index.html#expertise">← Back to portfolio</a></nav></div></header>
-<main><section class="hero"><div class="wrap"><div class="eyebrow">Yervand Sardaryan / Professional Toolkit</div><h1>Business Analysis<br><em>Knowledge Guide.</em></h1><p class="lead">A practical reference to requirements analysis and BPMN 2.0 process modeling—built from two learning presentations, reorganized into readable topics and illustrated with fictional banking examples.</p><div class="hero-stats"><span>01 · Requirements Analysis</span><span>02 · BPMN 2.0</span><span>Examples clearly distinguished from sources</span></div><div class="toplinks"><a href="#requirements">Explore Requirements ↘</a><a href="#bpmn">Explore BPMN ↘</a></div></div></section>
+<body><header class="nav"><div class="wrap nav-inner"><a class="logo" href="index.html" aria-label="Portfolio home">YS<i>.</i></a><nav aria-label="Guide navigation" class="nav-links"><a href="#requirements">Requirements Analysis</a><a href="#bpmn">BPMN 2.0</a><a href="#babok">BABOK Frameworks &amp; Techniques</a><a href="index.html#expertise">← Back to portfolio</a></nav></div></header>
+<main><section class="hero"><div class="wrap"><div class="eyebrow">Yervand Sardaryan / Professional Toolkit</div><h1>Business Analysis<br><em>Knowledge Guide.</em></h1><p class="lead">A practical reference to requirements analysis, BPMN 2.0 process modeling, and BABOK-aligned frameworks and techniques—built from two learning presentations, reorganized into readable topics and illustrated with fictional banking examples.</p><div class="hero-stats"><span>01 · Requirements Analysis</span><span>02 · BPMN 2.0</span><span>Examples clearly distinguished from sources</span></div><div class="toplinks"><a href="#requirements">Explore Requirements ↘</a><a href="#bpmn">Explore BPMN ↘</a></div></div></section>
 <section id="requirements" class="section"><div class="wrap"><span class="eyebrow">Learning path 01 / 02</span><h2>Requirements Analysis</h2><p class="section-lead">From understanding the domain to eliciting requirements, resolving conflicts, managing change, and documenting an agreed solution.</p>
 <div class="topics">
 <article class="topic"><span class="number">01 / UNDERSTAND THE DOMAIN</span><h3>Domain Knowledge &amp; Use Cases</h3><p>Requirements elicitation starts with understanding the relevant domain and the people who interact with the system. The material contrasts <strong>domain knowledge (static)</strong> with <strong>use cases (dynamic)</strong>.</p><div class="two-col"><div class="mini"><strong>Domain knowledge</strong><p>Rules, entities, terminology and constraints governing the problem area.</p></div><div class="mini"><strong>Use cases</strong><p>Actor goals and interaction sequences describing system behavior.</p></div></div><div class="extra"><span class="tag">Illustrative example</span>Cardless ATM withdrawal: account, withdrawal limit, and code-expiry policy are domain concepts; “Withdraw cash using a one-time code” is a use case.</div></article>
@@ -46,5 +70,89 @@
 <article class="topic"><span class="number">05 / RESPONSIBILITIES</span><h3>Swimlanes</h3><p>Swimlanes visually organize process activities by participating roles or organizational responsibilities.</p><div class="two-col"><div class="mini"><strong>Customer</strong><p>Creates a cash-withdrawal request and enters a code at an ATM.</p></div><div class="mini"><strong>Bank systems</strong><p>Validate and authorize the request.</p></div></div><div class="extra"><span class="tag">Supplementary BPMN clarification</span>Within the same pool, use sequence flows across lanes. Between distinct pools, use message flows to represent communication.</div></article>
 <article class="topic"><span class="number">06 / SUPPORTING INFORMATION</span><h3>Artifacts and Connectors</h3><p>Artifacts add contextual process information; connectors express relationships or process flow. These headings appear in the source presentation, while the examples below are supplementary.</p><div class="two-col"><div class="mini"><strong>Artifacts</strong><p>Data objects, text annotations and groups can clarify what the process handles.</p></div><div class="mini"><strong>Connectors</strong><p>Sequence flows show order; message flows show communication; associations link relevant information.</p></div></div><div class="extra"><span class="tag">Illustrative example</span>Attach a withdrawal-request data object to “Generate code,” and use a dashed message flow between bank and ATM pools.</div></article>
 <article class="topic span"><span class="number">07 / APPLY IT</span><h3>Mini Example — Cardless ATM Withdrawal</h3><p>This fictional example connects the concepts to the BPMN case study already on the portfolio.</p><div class="flow"><span class="node">Start: Cash needed</span><span class="arrow">→</span><span class="node">Request code</span><span class="arrow">→</span><span class="node">Code valid?</span><span class="arrow">→</span><span class="node">Dispense or reject</span></div><p class="subtle">For actual process modeling, the full diagram should represent customer, bank and ATM as appropriate participants, including the 15-minute expiration and exceptions.</p><div class="toplinks"><a href="index.html#bpmn">See BPMN Portfolio Case Study ↗</a><a href="index.html#expertise">Back to Expertise ↗</a></div></article>
-</div><div class="source-note"><strong>Source:</strong> “4.BPMN.pptx” (10 slides). The diagram categories and core definitions reflect the slides. The source uses section headings for swimlanes, artifacts, and connectors without detailed textual definitions; those explanations, symbols, and the banking flow here are newly authored supplementary examples. For the formal standard, consult the <a style="color:#58e1b6;text-decoration:underline" href="https://www.omg.org/spec/BPMN/2.0.2" target="_blank" rel="noopener noreferrer">OMG BPMN 2.0.2 specification</a>.</div></div></section></main>
+</div><div class="source-note"><strong>Source:</strong> “4.BPMN.pptx” (10 slides). The diagram categories and core definitions reflect the slides. The source uses section headings for swimlanes, artifacts, and connectors without detailed textual definitions; those explanations, symbols, and the banking flow here are newly authored supplementary examples. For the formal standard, consult the <a style="color:#58e1b6;text-decoration:underline" href="https://www.omg.org/spec/BPMN/2.0.2" target="_blank" rel="noopener noreferrer">OMG BPMN 2.0.2 specification</a>.</div></div></section>
+<section class="section" id="babok"><div class="wrap">
+  <div class="eyebrow">03 / Professional Development · BABOK® v3</div>
+  <h2>Frameworks, documentation &amp;<br><em>modeling practices.</em></h2>
+  <p class="bk-intro">A practical reference focused on governance, traceability, estimation, testable requirements, user stories, and modeling. The topics correspond to <em>A Guide to the Business Analysis Body of Knowledge® (BABOK® Guide), version 3</em>, and address common competencies expected of a Senior Business / Systems Analyst.</p>
+  <div class="bk-nav"><a href="#bk-governance">Governance &amp; RACI</a><a href="#bk-estimation">Estimation</a><a href="#bk-stories">User Stories &amp; Gherkin</a><a href="#bk-uml">UML &amp; Modeling</a><a href="#bk-prototyping">Prototyping</a><a href="#bk-quality">Quality Checklist</a></div>
+  <div class="bk-grid">
+    <article class="bk-card" id="bk-governance"><div class="bk-kicker">Governance &amp; responsibility</div><h3>Decision authority, reviews and RACI</h3>
+      <p>Establish who can request, review, prioritize and approve requirements, along with how changes are communicated. BABOK describes governance in <strong>§3.3</strong>, and stakeholder responsibilities in <strong>§3.2</strong>. Its <strong>§10.39 Roles and Permissions Matrix</strong> concerns solution access rights, and should not be mistaken for an organizational RACI chart.</p>
+      <p><strong>RACI</strong> is a complementary responsibility-assignment technique: <strong>R</strong> performs the work, <strong>A</strong> owns the outcome or decision, <strong>C</strong> provides input and <strong>I</strong> receives updates. It is not a separately named BABOK v3 technique.</p>
+      <div class="bk-example"><strong>ATM example:</strong> For approving a change to the one-time code expiry policy, identify a business owner accountable for approval; BA and security specialists may be responsible/consulted for analysis, while development and QA are informed or consulted according to governance.</div>
+      <div class="bk-ref">BABOK v3: §§3.2–3.3, printed pp. 31, 37; §10.39, p. 333 · RACI explanation: supplementary</div>
+    </article>
+    <article class="bk-card"><div class="bk-kicker">Requirements life cycle</div><h3>Traceability and change impact</h3>
+      <p>Trace a business need through individual requirements, design elements and tests. Forward and backward links help spot uncovered needs, unnecessary functionality, and consequences of a proposed change.</p>
+      <div class="bk-example"><strong>Illustrative trace:</strong> BR-ATM-02 (15-minute validity) → FR-07 (reject after expiry) → DAX/diagram or API rule → AC-07 (expiry boundary) → QA test TC-07.</div>
+      <p>When the expiry policy changes, inspect every linked requirement, API contract, UX message and test before approving the change.</p>
+      <div class="bk-ref">BABOK v3: §5.1 Trace Requirements, printed p. 79; §5.4 Assess Requirements Changes, p. 91</div>
+    </article>
+    <article class="bk-card" id="bk-estimation"><div class="bk-kicker">Planning &amp; uncertainty</div><h3>Structured estimation techniques</h3>
+      <p>Use estimates to discuss delivery effort, cost and uncertainty—not to imply certainty. BABOK identifies bottom-up, parametric, rough-order-of-magnitude, rolling-wave, Delphi and PERT approaches. Choose based on evidence, project phase and available experts.</p>
+      <div class="bk-example"><strong>Example PERT:</strong> Optimistic 3 days, most likely 5 days, pessimistic 11 days → (3 + 4 × 5 + 11) ÷ 6 ≈ <strong>5.7 days</strong>. This is an illustrative planning estimate, not a commitment.</div>
+      <p>Communicate assumptions, dependencies and a range rather than just a single number.</p>
+      <div class="bk-ref">BABOK v3: §10.19 Estimation, printed pp. 271–274</div>
+    </article>
+    <article class="bk-card"><div class="bk-kicker">Risk management</div><h3>Risk assessment and treatment</h3>
+      <p>Describe risks using potential consequence, impact, likelihood and time frame. Identify reasonable responses, owners and triggers. Risk review belongs in both change strategy and day-to-day requirements discussions.</p>
+      <div class="bk-example"><strong>ATM example:</strong> An ATM times out after sending a dispense request. Risk: a customer may be charged without confirmed cash delivery. Control: distinguish pending from completed outcomes, log evidence and trigger reconciliation.</div>
+      <div class="bk-ref">BABOK v3: §6.3 Assess Risks, printed p. 120; §10.38 Risk Analysis and Management, p. 329</div>
+    </article>
+    <article class="bk-card bk-wide" id="bk-stories"><div class="bk-kicker">Requirements quality</div><h3>User stories, acceptance criteria and negative scenarios</h3>
+      <p>Capture the actor, desired capability and business value in a concise story, then work with stakeholders to elaborate details. A story is a conversation starter—not a complete specification by itself. Add measurable acceptance criteria and both happy-path and exceptional scenarios.</p>
+      <div class="bk-example"><strong>Story:</strong> As a mobile banking customer, I want to request a cardless cash withdrawal so I can obtain cash without using my physical card.</div>
+      <p><strong>Gherkin-style acceptance scenarios</strong> (supplementary BDD syntax). BABOK §10.48 mentions Given/When/Then as a common story format, but does not prescribe the formal Gherkin specification.</p>
+      <pre class="bk-code">Scenario: One-time code expires after 15 minutes
+Given a withdrawal code was generated 15 minutes ago
+When the customer submits the code at an ATM
+Then the withdrawal is rejected as expired
+And no funds are debited
+
+Scenario: Code cannot be redeemed twice
+Given a code has already authorized a completed withdrawal
+When the same code is submitted again
+Then the system rejects the redemption
+And no additional withdrawal is authorized
+
+Scenario: Valid code within the time window
+Given the customer has an active, unused withdrawal code
+And the account has sufficient available funds
+When the customer redeems the code before expiration
+Then the bank may authorize the requested amount
+And the code is reserved against concurrent redemption</pre>
+      <p>Write acceptance criteria for authorization errors, boundary values, concurrency, retries and reversals, not only successful outcomes. Test cases should map back to a requirement or business rule.</p>
+      <div class="bk-ref">BABOK v3: §10.48 User Stories, printed pp. 359–361; §10.1 Acceptance and Evaluation Criteria, pp. 217–220; §10.47 Use Cases and Scenarios, pp. 356–358; §7.2 Verify Requirements, p. 141 · Gherkin syntax examples: supplementary</div>
+    </article>
+    <article class="bk-card" id="bk-uml"><div class="bk-kicker">Modeling choices</div><h3>Choose the right UML / process diagram</h3>
+      <p>Different models answer different questions; do not treat UML and BPMN as interchangeable.</p>
+      <div class="bk-table-wrap"><table class="bk-table"><thead><tr><th>Diagram</th><th>Best question</th><th>ATM example</th></tr></thead><tbody>
+      <tr><td>Use Case (UML)</td><td>What goals can actors achieve?</td><td>Generate code, redeem code, view status</td></tr>
+      <tr><td>Activity (UML)</td><td>How do actions and decisions flow?</td><td>Validation and branching steps</td></tr>
+      <tr><td>Sequence (UML)</td><td>Which system sends what message, and when?</td><td>ATM → backend → core banking → ATM</td></tr>
+      <tr><td>State Machine (UML)</td><td>What are the valid object states/transitions?</td><td>Active → Redeeming → Used / Expired</td></tr>
+      <tr><td>Class (UML)</td><td>What domain entities and relationships exist?</td><td>Account, WithdrawalRequest, ATMTransaction</td></tr>
+      <tr><td>BPMN</td><td>How does the end-to-end business process work across participants?</td><td>Customer, bank and ATM workflow</td></tr>
+      </tbody></table></div>
+      <p>For interaction timing, BABOK explicitly describes sequence diagrams; for complex object lifecycles, it describes state modeling. Additional diagram comparisons here are explanatory examples.</p>
+      <div class="bk-ref">BABOK v3: §§10.42 Sequence Diagrams (p. 341), 10.44 State Modelling (p. 348), 10.47 Use Cases and Scenarios (p. 356), 10.35 Process Modelling (p. 318) · UML comparison: supplementary</div>
+    </article>
+    <article class="bk-card" id="bk-prototyping"><div class="bk-kicker">Elicitation &amp; solution design</div><h3>Prototyping practices</h3>
+      <p>Use low-fidelity sketches to discover requirements quickly; use clickable or functional prototypes when workflow and interactions need validation. Clarify whether the prototype is <strong>throw-away</strong> or <strong>evolutionary</strong> so stakeholders do not mistake it for approved production design.</p>
+      <div class="bk-steps"><span>Sketch</span><span>Review with users</span><span>Capture feedback</span><span>Revise</span><span>Confirm requirements</span></div>
+      <div class="bk-example"><strong>ATM example:</strong> Prototype a mobile page with amount, code, countdown and expired-state message. Test accessibility, error handling, wording and user understanding before defining the final interface.</div>
+      <p>Record assumptions, decision points and open questions; link approved behavior back to acceptance criteria.</p>
+      <div class="bk-ref">BABOK v3: §10.36 Prototyping, printed pp. 323–326; §7.1 Specify and Model Requirements, p. 136</div>
+    </article>
+    <article class="bk-card" id="bk-quality"><div class="bk-kicker">Artifact review</div><h3>Verification versus validation</h3>
+      <p><strong>Verification:</strong> Is the requirement well formed, understandable, internally consistent and usable? <strong>Validation:</strong> Does it appropriately support the business need and stakeholder value?</p>
+      <div class="bk-example"><strong>Example:</strong> “The code expires quickly” is ambiguous (verification issue). “15 minutes” may be precise but still needs confirmation that it meets banking security and customer-access goals (validation issue).</div>
+      <p><strong>Review checklist:</strong> clear actor, expected behavior, preconditions, business rules, exceptions, boundary conditions, security/performance constraints, dependencies, testability, source and approvals.</p>
+      <div class="bk-ref">BABOK v3: §7.2 Verify Requirements, p. 141; §7.3 Validate Requirements, p. 144; §10.37 Reviews, p. 326</div>
+    </article>
+  </div>
+  <p class="bk-disclaimer"><strong>Source attribution:</strong> Study notes are original paraphrases informed by <em>A Guide to the Business Analysis Body of Knowledge® (BABOK® Guide), v3</em>, International Institute of Business Analysis (IIBA), 2015. Printed page numbers refer to the book, not PDF viewer page numbers. RACI details, Gherkin scenarios, ATM examples and UML comparison table are supplementary educational illustrations. This independent portfolio page is not an official IIBA publication or certification resource; the copyrighted source book is not distributed here.</p>
+</div></section>
+</main>
 <div class="wrap footer"><span>© <span id="year">2026</span> Yervand Sardaryan · Business Analysis Knowledge Guide</span><a href="index.html">← Return to portfolio</a></div><script>document.getElementById('year').textContent=new Date().getFullYear();</script></body></html>
