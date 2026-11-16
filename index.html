@@ -122,6 +122,35 @@
   .nav-links.open{display:flex}
 }
 
+
+/* Professional experience — expandable career timeline */
+.career-summary{display:flex;flex-wrap:wrap;gap:10px;margin:-10px 0 34px}
+.career-summary span{font-size:12px;font-weight:700;color:#b6eede;background:#15332f;border:1px solid #285c53;border-radius:999px;padding:7px 12px}
+.career-timeline{position:relative;margin-left:12px;padding-left:32px;border-left:2px solid #2e5160}
+.career-entry{position:relative;margin-bottom:17px}
+.career-entry:before{content:"";position:absolute;left:-41px;top:27px;width:12px;height:12px;background:#58e1b6;border:3px solid #0b1120;border-radius:50%;box-shadow:0 0 0 2px #335a5b}
+.career-details{background:linear-gradient(135deg,#15253a,#111d30);border:1px solid #2e4057;border-radius:15px;overflow:hidden;transition:border-color .2s}
+.career-details[open]{border-color:#3a7b75}
+.career-details summary{display:flex;align-items:center;justify-content:space-between;gap:18px;cursor:pointer;padding:21px 23px;list-style:none}
+.career-details summary::-webkit-details-marker{display:none}
+.career-details summary:focus-visible,.career-case-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.career-heading{display:flex;flex-direction:column;gap:3px;min-width:0}
+.career-date{color:#69dfbb;font-size:11px;text-transform:uppercase;letter-spacing:1.2px;font-weight:800}
+.career-role{font:800 clamp(16px,2vw,20px) Manrope,sans-serif;line-height:1.45;color:#f3f6fc}
+.career-company{font-size:13px;color:#aec5e1;line-height:1.5}
+.career-expand{display:grid;place-items:center;flex-shrink:0;width:29px;height:29px;border-radius:8px;border:1px solid #466073;color:#8fe6d1;transition:transform .2s}
+.career-details[open] .career-expand{transform:rotate(180deg)}
+.career-body{padding:0 23px 24px;border-top:1px solid #ffffff14}
+.career-body p{margin:17px 0 9px;font-size:14px;color:#c8d5e6}
+.career-body ul{margin:5px 0 17px;padding-left:20px;color:#abbcd2;font-size:13px;line-height:1.85}
+.career-body li{margin:5px 0}
+.career-tags{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}
+.career-tags span{padding:5px 10px;font-size:11px;border-radius:99px;border:1px solid #36566a;color:#c8dce7;background:#1a3041}
+.career-case-link{display:inline-flex;align-items:center;margin-top:6px;color:#061e1a!important;background:#58e1b6;border-radius:9px;font-weight:800;font-size:12px;padding:10px 14px;text-decoration:none}
+.career-case-link:hover{filter:brightness(1.1)}
+.career-note{font-size:12px;color:var(--muted);max-width:790px;margin-top:21px}
+@media(max-width:650px){.career-timeline{margin-left:7px;padding-left:24px}.career-entry:before{left:-33px}.career-details summary{padding:17px}.career-body{padding:0 17px 19px}}
+
 </style>
 </head>
 <body>
@@ -131,7 +160,47 @@
 <section class="hero" id="home"><div class="container hero-grid"><div><div class="status"><span class="dot"></span> Open to new opportunities · Yerevan, Armenia</div><div class="eyebrow">Business Analysis · Financial Technology</div><h1>Turning complex systems into <em>clear solutions.</em></h1><p class="lead">I'm <strong>Yervand Sardaryan</strong>, an IT Business &amp; Systems Analyst with <strong>6+ years of experience</strong> in FinTech, payments, banking, and fraud prevention. I bridge business goals and technical execution to deliver reliable, scalable digital solutions.</p><div class="actions"><a class="btn btn-primary" href="#contact">Get in touch ↗</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/yervandsardaryan/" rel="noopener noreferrer" target="_blank">View LinkedIn ↗</a><a class="btn btn-secondary" download="Yervand_Sardaryan_CV.pdf" href="TechnicalBAYervandSardaryan.pdf" type="application/pdf">↓ Download CV (PDF)</a></div><div class="hero-facts"><div class="fact"><strong>6+</strong><span>Years in business analysis</span></div><div class="fact"><strong>FinTech</strong><span>Payments &amp; banking focus</span></div><div class="fact"><strong>API-first</strong><span>Technical analysis mindset</span></div></div></div><aside aria-label="Profile card" class="hero-card"><div class="monogram">YS</div><div class="card-caption"><div><strong>Yervand Sardaryan</strong><small>Business &amp; Systems Analyst<br/>Yerevan, Armenia</small></div><span class="card-mark">✳</span></div></aside></div></section>
 <section class="content" id="about"><div class="container"><div class="section-head"><div class="section-kicker">01 / Profile</div><h2>Business thinking.<br/>Technical depth.</h2></div><div class="about-grid"><div class="about-copy"><p>My work sits at the intersection of <strong>stakeholder needs, systems design, and delivery</strong>. I turn complex business processes into clear requirements, actionable technical specifications, and testable outcomes.</p><p>From payment processing and banking integrations to fraud detection and production support, I collaborate with product teams, developers, architects, and QA to make solutions work end to end.</p></div><div><div class="section-kicker">Domains I work across</div><div class="pill-row"><span class="pill">Payment Processing</span><span class="pill">Card Issuing &amp; Acquiring</span><span class="pill">Fraud Detection</span><span class="pill">Core Banking</span><span class="pill">API Integrations</span><span class="pill">Digital Onboarding</span><span class="pill">Financial Services</span><span class="pill">AI / ML Solutions</span></div></div></div></div></section>
 <section class="content" id="expertise"><div class="container"><div class="section-head"><div class="section-kicker">02 / Expertise</div><h2>Where I add value</h2><p>Combining business analysis discipline with the practical technical understanding needed for complex financial platforms.</p></div><div class="focus-grid"><article class="focus-card"><div class="icon">◈</div><h3>Payments &amp; Banking</h3><p>Transaction lifecycles, card processing, issuing and acquiring, financial system integrations, and core banking workflows.</p></article><article class="focus-card"><div class="icon">◎</div><h3>Fraud &amp; Risk Technology</h3><p>Real-time fraud prevention, transaction data, risk indicators, decision flows, and AI/ML-assisted solutions.</p></article><article class="focus-card"><div class="icon">⌘</div><h3>Business &amp; Systems Analysis</h3><p>Requirements elicitation, functional and technical specifications, workflow analysis, user stories, and acceptance criteria.</p><a class="knowledge-card-link" href="ba-knowledge-guide.html">Explore BA Knowledge Hub <span aria-hidden="true">↗</span></a></article><article class="focus-card"><div class="icon">↔</div><h3>APIs &amp; Integrations</h3><p>REST APIs, OpenAPI specifications, payload mapping, event-driven workflows, and cross-system dependencies.</p></article><article class="focus-card"><div class="icon">▣</div><h3>Delivery &amp; Quality</h3><p>Agile collaboration, backlog refinement, QA and UAT coordination, issue analysis, and release support.</p></article><article class="focus-card"><div class="icon">✧</div><h3>AI-Enhanced Analysis</h3><p>Exploring practical ways to use LLMs and AI agents to accelerate documentation, analysis, and everyday BA workflows.</p></article></div></div></section>
-<section class="content" id="experience"><div class="container"><div class="section-head"><div class="section-kicker">03 / Selected experience</div><h2>Work in practice</h2><p>Selected areas of professional work. A detailed employer-by-employer timeline can be added when final titles and dates are confirmed.</p></div><div class="timeline"><div class="timeline-item"><div class="time">Financial technology</div><h3>Payments &amp; Fraud Prevention</h3><div class="org">Business and technical analysis</div><p>Defined and analyzed requirements for payment data, fraud indicators, API payloads, merchant information, and integrations across financial technology systems.</p></div><div class="timeline-item"><div class="time">Financial services</div><h3>Core Banking &amp; Digital Channels</h3><div class="org">Systems analysis and implementation</div><p>Supported analysis for customer onboarding, loan and deposit processes, customer and account operations, and integration between banking platforms and digital channels.</p></div><div class="timeline-item"><div class="time">Cross-functional delivery</div><h3>Requirements to Release</h3><div class="org">Business analysis, QA / UAT, stakeholder alignment</div><p>Worked with business and engineering stakeholders on specifications, process models, change requests, testing coordination, production issues, and delivery planning.</p></div></div></div></section>
+<section class="content" id="experience"><div class="container">
+ <div class="section-head"><div class="section-kicker">03 / Professional Experience</div><h2>My career journey</h2><p>From iGaming incident management to enterprise data integrations, FinTech and AI-powered product delivery. Select any position to explore responsibilities and related portfolio evidence.</p></div>
+ <div class="career-summary"><span>6+ years in business analysis</span><span>FinTech · Banking · AI/ML · iGaming</span></div>
+ <div class="career-timeline"><article class="career-entry">
+      <details class="career-details" open>
+        <summary><span class="career-heading"><span class="career-date">Jul 2023 – Nov 2026</span><span class="career-role">IT Business Analyst</span><span class="career-company">Energize Global Services CJSC <span aria-hidden="true">·</span> FinTech · Payments &amp; Fraud Prevention</span></span><span class="career-expand" aria-hidden="true">⌄</span></summary>
+        <div class="career-body"><p>Defined requirements and functional specifications for payment processing, transaction monitoring, and fraud-risk capabilities.</p><ul><li>Defined user stories, functional specifications, acceptance criteria, and end-to-end process flows.</li><li>Analyzed payment and fraud-related data, APIs, validation rules, and field mappings.</li><li>Partnered with engineers, QA, and business stakeholders to clarify implementation and testing expectations.</li></ul><div class="career-tags" aria-label="Key skills"><span>REST APIs</span><span>Fraud Risk</span><span>Data Mapping</span><span>BPMN</span><span>Requirements Engineering</span></div></div>
+      </details>
+    </article>
+<article class="career-entry">
+      <details class="career-details" open>
+        <summary><span class="career-heading"><span class="career-date">May 2022 – Apr 2023</span><span class="career-role">Product Owner / Senior Business Analyst</span><span class="career-company">Plat.AI <span aria-hidden="true">·</span> AI/ML · Real-Time Decisioning</span></span><span class="career-expand" aria-hidden="true">⌄</span></summary>
+        <div class="career-body"><p>Supported delivery of an AI-powered analytics and decisioning product using configurable business rules.</p><ul><li>Managed the product roadmap, priorities, and backlog.</li><li>Defined epics, user stories, wireframes, and acceptance criteria.</li><li>Coordinated engineering, design, and QA throughout product delivery.</li></ul><div class="career-tags" aria-label="Key skills"><span>AI/ML</span><span>Business Rules</span><span>Product Roadmap</span><span>User Stories</span></div><a class="career-case-link" href="#plat-ai">Explore AI Decisioning Case Study ↗</a></div>
+      </details>
+    </article>
+<article class="career-entry">
+      <details class="career-details">
+        <summary><span class="career-heading"><span class="career-date">Dec 2021 – May 2022</span><span class="career-role">Business Analyst</span><span class="career-company">IUNETWORKS LLC <span aria-hidden="true">·</span> Public Sector · E-Tax Administration</span></span><span class="career-expand" aria-hidden="true">⌄</span></summary>
+        <div class="career-body"><p>Analyzed requirements for E-Tax Administration workflows, including filing, invoicing, and risk management.</p><ul><li>Facilitated requirements elicitation workshops and stakeholder discussions.</li><li>Documented functional requirements and maintained requirements traceability.</li><li>Supported Scrum delivery activities as a proxy Product Owner.</li></ul><div class="career-tags" aria-label="Key skills"><span>E-Tax</span><span>Elicitation</span><span>Traceability</span><span>Scrum</span></div></div>
+      </details>
+    </article>
+<article class="career-entry">
+      <details class="career-details" open>
+        <summary><span class="career-heading"><span class="career-date">Mar 2020 – Dec 2021</span><span class="career-role">Business Analyst</span><span class="career-company">Praemium <span aria-hidden="true">·</span> WealthTech · Financial Data Aggregation</span></span><span class="career-expand" aria-hidden="true">⌄</span></summary>
+        <div class="career-body"><p>Worked across financial data analysis and reporting, while contributing to integrated data flows for investment-platform users.</p><ul><li>Analyzed financial data for 50+ enterprise clients and supported product requirements.</li><li>Developed Power BI market-value reports and KPI dashboards serving 100+ monthly users, as described in the CV.</li><li>Defined user stories, business rules, acceptance criteria, and supported Agile delivery.</li></ul><div class="career-tags" aria-label="Key skills"><span>Power BI</span><span>Data Aggregation</span><span>Requirements</span><span>Financial Data</span></div><a class="career-case-link" href="#praemium">Explore Data Aggregation Case Study ↗</a></div>
+      </details>
+    </article>
+<article class="career-entry">
+      <details class="career-details">
+        <summary><span class="career-heading"><span class="career-date">Oct 2019 – May 2020</span><span class="career-role">DataFeed Administrator</span><span class="career-company">Praemium <span aria-hidden="true">·</span> Third-Party Data Feeds · Operations</span></span><span class="career-expand" aria-hidden="true">⌄</span></summary>
+        <div class="career-body"><p>Monitored financial data feeds and supported issue resolution, mapping, and data-processing verification.</p><ul><li>Investigated data-loading errors and coordinated missing-data issues with providers and clients.</li><li>Supported security code and exchange mapping and database updates.</li><li>Verified feed processing and addressed data-quality concerns.</li></ul><div class="career-tags" aria-label="Key skills"><span>Data Feeds</span><span>Field Mapping</span><span>Reconciliation</span><span>Operations</span></div><a class="career-case-link" href="#praemium">Related Data Aggregation Case Study ↗</a></div>
+      </details>
+    </article>
+<article class="career-entry">
+      <details class="career-details">
+        <summary><span class="career-heading"><span class="career-date">Mar 2016 – Oct 2019</span><span class="career-role">Incident Manager</span><span class="career-company">SoftConstruct <span aria-hidden="true">·</span> iGaming · Production Operations</span></span><span class="career-expand" aria-hidden="true">⌄</span></summary>
+        <div class="career-body"><p>Coordinated production-incident response and technical recovery for customer-impacting iGaming services.</p><ul><li>Managed incident escalation and cross-team troubleshooting.</li><li>Coordinated technical teams during critical production incidents.</li><li>Communicated incident status, customer impact, and recovery progress.</li></ul><div class="career-tags" aria-label="Key skills"><span>Incident Response</span><span>iGaming</span><span>Technical Coordination</span><span>Stakeholder Communication</span></div></div>
+      </details>
+    </article></div>
+ <p class="career-note">Career dates and role descriptions are based on my professional CV. Praemium positions overlap in 2020, as listed in the CV. Portfolio architecture diagrams and examples are illustrative and do not disclose internal client implementations.</p>
+ </div></section>
 <section class="content" id="skills"><div class="container"><div class="section-head"><div class="section-kicker">04 / Toolkit</div><h2>My professional toolkit</h2><p>Methods, platforms and technologies I use to translate complex business challenges into practical solutions.</p></div>
 <div class="skill-grid">
 <div class="skill-group"><h3>Business Analysis &amp; Product</h3><ul><li>Business &amp; systems analysis</li><li>Requirements elicitation, documentation &amp; management</li><li>BRD, FRD, functional specifications</li><li>User stories, acceptance criteria &amp; use cases</li><li>BPMN 2.0, UML &amp; process optimization</li><li>Stakeholder workshops &amp; management</li><li>Product backlog, prioritization &amp; KPIs</li></ul></div>
