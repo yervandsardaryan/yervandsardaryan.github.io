@@ -156,6 +156,9 @@
 #fraud-powerbi{scroll-margin-top:90px;margin-top:28px}
 #fraud-powerbi .bi-preview img{width:100%;height:auto;display:block;object-fit:contain;background:#f7f9fc}
 .career-evidence-note{display:block;font-size:11px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:640px}
+
+#customer-churn-powerbi{scroll-margin-top:90px;margin-top:28px}
+#customer-churn-powerbi .bi-preview img{width:100%;height:auto;display:block;object-fit:contain;background:#f4f5f8}
 </style>
 </head>
 <body>
@@ -221,7 +224,7 @@
 <div class="section-kicker">06 / Data Analytics &amp; Power BI</div>
 <h2>From business questions<br/>to actionable insights.</h2>
 <p class="bi-intro">I bring business analysis and data analytics together to define meaningful KPIs, translate reporting requirements into clear metrics, and communicate insights. My toolkit includes Power BI, SQL, Excel, Tableau, Snowflake and data modeling techniques.</p>
-<div class="bi-highlight"><h3>Power BI &amp; analytics workflow</h3><p>Business questions &rarr; KPI definitions &rarr; data preparation &amp; modeling &rarr; DAX measures &rarr; visual storytelling &rarr; business decisions. My portfolio reports can be showcased here as screenshots, documented case studies, and visual dashboard previews and documented case studies &mdash; without requiring Microsoft cloud embedding.</p></div>
+<div class="bi-highlight"><h3>Power BI &amp; analytics workflow</h3><p>Business questions &rarr; KPI definitions &rarr; data preparation &amp; modeling &rarr; DAX measures &rarr; visual storytelling &rarr; business decisions. The case studies below present dashboard previews and documented analyses without requiring Microsoft cloud embedding.</p></div>
 <article class="bi-feature" aria-labelledby="payment-title">
   <a class="bi-preview" href="PaymentTransactionAnalyticsBI.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Power BI dashboard screenshot">
     <img src="PaymentTransactionAnalyticsBI.png" alt="Payment Transaction Analytics Power BI report with KPI cards, country transaction bubble map, geographic transaction share chart, channel volumes, decline analysis and cumulative transaction trends" loading="lazy" width="959" height="528" />
@@ -252,12 +255,44 @@
     <div class="bi-tags"><span>Power BI Desktop</span><span>DAX Measures</span><span>Credit Card Fraud</span><span>Risk Analytics</span><span>Transaction Monitoring</span><span>Synthetic Data</span></div>
   </div>
 </article>
-<div class="bi-cards" aria-label="Planned analytics case studies">
+<article class="bi-feature churn-bi-feature" id="customer-churn-powerbi" aria-labelledby="churn-pbi-title">
+  <a class="bi-preview" href="CustomerChurnAnalysis.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Customer Churn Analysis Power BI dashboard screenshot">
+    <img src="CustomerChurnAnalysis.png" alt="Customer Churn Analysis Power BI dashboard showing 7,032 customers, 1,869 churned customers, a 26.58% churn rate, and charts by contract type, gender, senior citizen status, tenure, payment method, monthly charges and total charges" loading="lazy" width="1433" height="756" />
+    <span>View full churn dashboard ↗</span>
+  </a>
+  <div class="bi-feature-copy">
+    <span class="bi-eyebrow">Completed Power BI dashboard · Independent customer retention analysis</span>
+    <h3 id="churn-pbi-title">Customer Churn &amp; Retention Analysis</h3>
+    <p>Analyze customer attrition across a dataset of <strong>7,032 customers</strong>, including <strong>1,869 churned customers (26.58%)</strong>. Compare retention patterns by contract type, customer tenure, demographics, payment method and spending.</p>
+    <p><strong>Included analysis:</strong> Executive churn KPI cards; churn rate by contract type; customer churn by gender, senior status and payment method; customer tenure; and monthly and total charge distribution.</p>
+    <p><strong>Business application:</strong> Churn segmentation and retention insights are transferable to subscription and iGaming product analytics. This example uses contract, senior-citizen and monthly-charge fields typical of a telecom-style churn dataset; it does not claim to represent real iGaming customer activity.</p>
+    <a class="bi-download" href="CustomerChurnAnalysis.png" target="_blank" rel="noopener noreferrer">↗ View dashboard preview</a>
+    <span class="bi-download-hint">Dashboard screenshot only · No source PBIX or customer-level dataset is published here.</span>
+    <div class="bi-tags"><span>Power BI Desktop</span><span>Customer Churn</span><span>Retention Analytics</span><span>Customer Segmentation</span><span>KPI Design</span><span>iGaming Relevance</span></div>
+  </div>
+</article>
+<article class="bi-feature churn-bi-feature" id="igaming-player-churn-powerbi" aria-labelledby="igaming-churn-title">
+  <a class="bi-preview" href="iGamingPlayerChurnAnalysis.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size iGaming Player Churn and Retention Power BI report screenshot">
+    <img src="iGamingPlayerChurnAnalysis.png" alt="iGaming player churn report with 10,000 total players, 2,456 churned players, 30.52% churn rate, 8,047 eligible players, 4,088 active players and 1,747 at-risk players; visualizations compare churn by VIP tier, acquisition channel, game category and country, GGR by VIP tier, lifecycle status and registration cohorts." loading="lazy" width="959" height="529" />
+    <span>View full iGaming dashboard ↗</span>
+  </a>
+  <div class="bi-feature-copy">
+    <span class="bi-eyebrow">Completed Power BI report · Independent project · Synthetic iGaming data</span>
+    <h3 id="igaming-churn-title">iGaming Player Churn &amp; Retention Analysis</h3>
+    <p>Explore player engagement and retention for a synthetic portfolio of <strong>10,000 players</strong>. The snapshot identifies <strong>2,456 churned players</strong> and a <strong>30.52% churn rate</strong> among <strong>8,047 eligible players</strong>, alongside active, at-risk and never-activated segments.</p>
+    <p><strong>Included analysis:</strong> Churn rate by VIP tier, acquisition channel and country; churned players by preferred game category; gross gaming revenue (GGR) by VIP tier; player lifecycle distribution; and retention comparisons across registration cohorts.</p>
+    <p><strong>Methodology:</strong> Churn is defined as 60+ days since the last real-money wager for eligible players. Cohort comparisons reflect status at the snapshot date, not historical month-by-month retention. All player and financial data are simulated, not employer or production data.</p>
+    <a class="bi-download" href="iGamingPlayerChurnAnalysis.png" target="_blank" rel="noopener noreferrer">↗ View full dashboard preview</a>
+    <span class="bi-download-hint">Screenshot preview · Editable Power BI report and underlying player data remain private.</span>
+    <div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>iGaming Analytics</span><span>Player Churn</span><span>Retention</span><span>VIP Segmentation</span><span>GGR</span><span>Synthetic Data</span></div>
+  </div>
+</article>
+<div class="bi-cards" aria-label="Upcoming analytics case studies">
 
 
 <article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Core Banking Performance</h3><p>Model an executive view of customers, loans, deposits, portfolio health, and servicing trends, with business-friendly definitions for each measure.</p><div class="bi-tags"><span>Power BI</span><span>Banking</span><span>Data Modeling</span></div></article>
 </div>
-<p class="bi-note">Payment Transaction Analytics and Credit Card Fraud Risk Analysis are independent Power BI Desktop case studies built with synthetic data. Dashboard screenshots are provided as previews; source .pbix files and raw datasets are not published here. Core Banking Performance remains a proposed case study. Public browser interaction would require a separately published Power BI report or web demo.</p>
+<p class="bi-note">Four completed Power BI report previews are presented above: Payment Transaction Analytics, Credit Card Fraud Risk Analysis, Customer Churn &amp; Retention Analysis (telecom-style dataset), and iGaming Player Churn &amp; Retention Analysis (synthetic player data). They are independent analytics demonstrations, not employer reports. Editable .pbix files and underlying datasets are not published. Core Banking Performance remains a proposed case study.</p>
 </div></section>
 
 <section class="content" id="bpmn"><div class="container">
