@@ -151,6 +151,11 @@
 .career-note{font-size:12px;color:var(--muted);max-width:790px;margin-top:21px}
 @media(max-width:650px){.career-timeline{margin-left:7px;padding-left:24px}.career-entry:before{left:-33px}.career-details summary{padding:17px}.career-body{padding:0 17px 19px}}
 
+
+/* Fraud Power BI feature and career cross-link */
+#fraud-powerbi{scroll-margin-top:90px;margin-top:28px}
+#fraud-powerbi .bi-preview img{width:100%;height:auto;display:block;object-fit:contain;background:#f7f9fc}
+.career-evidence-note{display:block;font-size:11px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:640px}
 </style>
 </head>
 <body>
@@ -166,7 +171,7 @@
  <div class="career-timeline"><article class="career-entry">
       <details class="career-details" open>
         <summary><span class="career-heading"><span class="career-date">Jul 2023 – Nov 2026</span><span class="career-role">IT Business Analyst</span><span class="career-company">Energize Global Services CJSC <span aria-hidden="true">·</span> FinTech · Payments &amp; Fraud Prevention</span></span><span class="career-expand" aria-hidden="true">⌄</span></summary>
-        <div class="career-body"><p>Defined requirements and functional specifications for payment processing, transaction monitoring, and fraud-risk capabilities.</p><ul><li>Defined user stories, functional specifications, acceptance criteria, and end-to-end process flows.</li><li>Analyzed payment and fraud-related data, APIs, validation rules, and field mappings.</li><li>Partnered with engineers, QA, and business stakeholders to clarify implementation and testing expectations.</li></ul><div class="career-tags" aria-label="Key skills"><span>REST APIs</span><span>Fraud Risk</span><span>Data Mapping</span><span>BPMN</span><span>Requirements Engineering</span></div></div>
+        <div class="career-body"><p>Defined requirements and functional specifications for payment processing, transaction monitoring, and fraud-risk capabilities.</p><ul><li>Defined user stories, functional specifications, acceptance criteria, and end-to-end process flows.</li><li>Analyzed payment and fraud-related data, APIs, validation rules, and field mappings.</li><li>Partnered with engineers, QA, and business stakeholders to clarify implementation and testing expectations.</li></ul><div class="career-tags" aria-label="Key skills"><span>REST APIs</span><span>Fraud Risk</span><span>Data Mapping</span><span>BPMN</span><span>Requirements Engineering</span></div><a class="career-case-link" href="#fraud-powerbi">Explore Power BI Fraud Risk Case Study ↗</a><span class="career-evidence-note">Independent synthetic-data project relevant to fraud-risk domain expertise; not an employer report.</span></div>
       </details>
     </article>
 <article class="career-entry">
@@ -232,12 +237,27 @@
     <div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>Payment Analytics</span><span>Geographic Analytics</span><span>Data Visualization</span><span>Synthetic Data</span></div>
   </div>
 </article>
+<article class="bi-feature fraud-bi-feature" id="fraud-powerbi" aria-labelledby="fraud-pbi-title">
+  <a class="bi-preview" href="creditcardfraudriskanalysis.png" target="_blank" rel="noopener noreferrer" aria-label="View full-size Credit Card Fraud Risk Analysis Power BI dashboard screenshot">
+    <img src="creditcardfraudriskanalysis.png" alt="Credit Card Fraud Risk Analysis Power BI dashboard with transaction and fraud KPI charts, fraud rate by merchant category, channel comparisons, transaction volume by country, estimated fraud loss, and a fraud trend chart" loading="lazy" width="926" height="493"/>
+    <span>View fraud dashboard screenshot ↗</span>
+  </a>
+  <div class="bi-feature-copy">
+    <span class="bi-eyebrow">Completed Power BI report · Independent project · Synthetic data</span>
+    <h3 id="fraud-pbi-title">Credit Card Fraud Risk Analysis</h3>
+    <p>An independent Power BI case study exploring credit card transaction behavior, confirmed fraud, geographic and merchant exposure, risk scoring, and the estimated financial impact of fraud. Built with a synthetic dataset of 10,000 transactions; no real customer or employer data is used.</p>
+    <p><strong>Included analysis:</strong> Transaction and fraud KPI measures, fraud rate, total transaction volume, estimated fraud loss, average risk score, fraud by channel and merchant category, country-level transaction volume, and fraud trends.</p>
+    <a class="bi-download" href="creditcardfraudriskanalysis.png" target="_blank" rel="noopener noreferrer">↗ View full dashboard preview</a>
+    <span class="bi-download-hint">Dashboard screenshot only · Editable Power BI (.pbix) source kept private.</span>
+    <div class="bi-tags"><span>Power BI Desktop</span><span>DAX Measures</span><span>Credit Card Fraud</span><span>Risk Analytics</span><span>Transaction Monitoring</span><span>Synthetic Data</span></div>
+  </div>
+</article>
 <div class="bi-cards" aria-label="Planned analytics case studies">
 
-<article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Fraud &amp; Risk Monitoring</h3><p>Explore fraud alerts, confirmed cases, risk segments, detection trends, and false positives while balancing protection with customer experience.</p><div class="bi-tags"><span>Power BI</span><span>Risk Analytics</span><span>KPI Design</span></div></article>
+
 <article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Core Banking Performance</h3><p>Model an executive view of customers, loans, deposits, portfolio health, and servicing trends, with business-friendly definitions for each measure.</p><div class="bi-tags"><span>Power BI</span><span>Banking</span><span>Data Modeling</span></div></article>
 </div>
-<p class="bi-note">Payment Transaction Analytics is a completed Power BI Desktop case study built with synthetic data. Fraud &amp; Risk Monitoring and Core Banking Performance remain proposed case studies. Public browser interaction requires a separate web demo or Power BI publishing access.</p>
+<p class="bi-note">Payment Transaction Analytics and Credit Card Fraud Risk Analysis are independent Power BI Desktop case studies built with synthetic data. Dashboard screenshots are provided as previews; source .pbix files and raw datasets are not published here. Core Banking Performance remains a proposed case study. Public browser interaction would require a separately published Power BI report or web demo.</p>
 </div></section>
 
 <section class="content" id="bpmn"><div class="container">
