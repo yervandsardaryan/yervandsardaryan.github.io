@@ -192,12 +192,112 @@
 .igaming-page-card strong{font:800 16px/1.4 Manrope,sans-serif}
 .igaming-page-card small{font-size:12px;color:var(--muted);line-height:1.5}
 @media(max-width:650px){.igaming-project-header{padding:19px}.igaming-page-overview{grid-template-columns:1fr}}
+
+/* Featured projects gallery — first impression, editorial contrast to the dark portfolio */
+.project-showcase{background:#f3f5f8;color:#182334;border-top:0!important;padding:64px 0 82px!important;min-height:100vh;scroll-margin-top:0}
+.project-container{width:min(calc(100% - 48px),1460px)!important;max-width:1460px!important}
+.project-showcase-head{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin:0 0 32px}
+.project-overline{color:#227f78;font:800 11px Manrope,sans-serif;letter-spacing:2px}
+.project-showcase-head h2{font:800 clamp(42px,5.5vw,70px)/1.08 Manrope,sans-serif;letter-spacing:-2.6px;margin:11px 0 10px}
+.project-dot{color:#258c85}
+.project-showcase-head p{color:#526174;font-size:15px;max-width:630px;margin:0}
+.project-head-pill{border:1px solid #bdd7d5;border-radius:100px;background:#e5f4f1;color:#10625e;font:800 26px Manrope,sans-serif;white-space:nowrap;padding:8px 18px}
+.project-head-pill span{font:800 10px Manrope,sans-serif;letter-spacing:1.1px;vertical-align:middle;margin-left:5px}
+.project-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.project-tile{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #dce2e8;border-radius:19px;padding:22px;box-shadow:0 8px 23px #18243b12;transition:transform .22s ease,box-shadow .22s ease}
+.project-tile:hover{transform:translateY(-4px);box-shadow:0 17px 34px #18243b22}
+.project-tile-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.project-index{color:#68808f;font:800 10px Manrope,sans-serif;letter-spacing:1.1px}
+.project-category{color:#147268;background:#e7f5f2;border-radius:999px;padding:5px 9px;font-size:9px;font-weight:800;letter-spacing:.7px}
+.project-tile h3{font:800 clamp(18px,1.7vw,23px)/1.35 Manrope,sans-serif;letter-spacing:-.6px;color:#182334;margin:19px 0 16px;min-height:65px}
+.project-thumb{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:16 / 9;background:#e9edf0;border:1px solid #d7dfe6;border-radius:12px;overflow:hidden}
+.project-thumb img{width:100%;height:100%;object-fit:contain;display:block}
+.project-image-action{position:absolute;bottom:10px;right:10px;background:#152434ed;color:white;font-size:11px;font-weight:700;border-radius:7px;padding:7px 9px}
+.project-description{margin:17px 0 13px;color:#536174;font-size:13px;line-height:1.65}
+.project-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-bottom:19px}
+.project-tags span{color:#536579;font-size:10px;background:#f3f6f9;border:1px solid #e1e8ee;padding:5px 8px;border-radius:100px}
+.project-tile-bottom{display:flex;flex-wrap:wrap;align-items:center;gap:10px;border-top:1px solid #e9eef3;padding-top:16px}
+.project-open{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;flex:1;background:#167f75;color:white;border-radius:9px;font-weight:800;font-size:12px;padding:13px 14px;white-space:nowrap}
+.project-open:hover,.project-open:focus-visible{background:#0f625c;color:white}
+.project-inline{color:#126c68;font-size:11px;font-weight:800;white-space:nowrap}
+.project-inline:hover{text-decoration:underline}
+.project-coming{background:#f9fbfc;border-style:dashed}
+.project-coming .project-next-art{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;aspect-ratio:16 / 9;border-radius:12px;background:linear-gradient(135deg,#163e50,#177b72);color:white;text-align:center;padding:18px}
+.project-next-art span{font-size:31px;color:#7ce5cf}
+.project-next-art strong{font:800 22px Manrope,sans-serif}
+.project-next-art small{font-size:11px;color:#cff6ec}
+.project-soon{font-size:11px;font-weight:800;color:#647b85;border-top:1px solid #dfe7ed;padding-top:17px}
+.project-explore-head{text-align:center;margin:72px auto 22px;max-width:760px}
+.project-explore-head>span{color:#147d73;letter-spacing:2px;font-size:10px;font-weight:800}
+.project-explore-head h3{font:800 clamp(27px,3vw,38px)/1.2 Manrope,sans-serif;letter-spacing:-1px;margin:9px 0}
+.project-explore-head p{color:#5d6d80;font-size:14px;margin:0}
+.project-embeds{display:grid;gap:13px}
+.project-embed{background:white;border:1px solid #dce2e9;border-radius:14px;overflow:hidden}
+.project-embed[open]{border-color:#78bab3;box-shadow:0 10px 22px #102e3312}
+.project-embed summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;padding:20px 23px;color:#172638}
+.project-embed summary::-webkit-details-marker{display:none}
+.project-embed summary:hover{background:#f8fbfb}
+.project-embed-summary{display:flex;flex-direction:column;gap:3px}
+.project-embed-eyebrow{font-size:10px;font-weight:800;letter-spacing:1px;color:#238879;text-transform:uppercase}
+.project-embed-summary strong{font:800 17px Manrope,sans-serif}
+.project-embed-summary small{color:#66788b;font-size:12px;line-height:1.5}
+.project-embed-action{color:#167b72;font-size:12px;font-weight:800;white-space:nowrap}
+.project-embed[open] .project-embed-action span{display:inline-block;transform:rotate(180deg)}
+.project-embed-body{padding:0 22px 20px}
+.project-embed-frame{aspect-ratio:16 / 9;background:#e8eef2;border:1px solid #dbe5ed;border-radius:10px;overflow:hidden}
+.project-embed-frame iframe{width:100%;height:100%;border:0;display:block}
+.project-embed-footer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;color:#687b8d;font-size:12px;margin-top:13px}
+.project-embed-footer a{color:#126c68;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.project-disclaimer{font-size:11px;color:#667889;line-height:1.7;margin:24px 0 0}
+@media(min-width:1001px){.nav-links .nav-projects-first{background:#19473f;color:#b7f5e5;border:1px solid #32796a;font-weight:800}}
+@media(max-width:1200px){.project-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.project-showcase{padding:34px 0 52px!important}.project-showcase-head{display:block}.project-head-pill{display:inline-block;margin-top:18px}.project-gallery{grid-template-columns:1fr;gap:15px}.project-tile{padding:18px}.project-tile h3{min-height:0}.project-showcase-head h2{font-size:47px}.project-embed summary{flex-direction:column;align-items:flex-start;padding:18px}.project-embed-body{padding:0 12px 15px}.project-embed-frame{aspect-ratio:4 / 3}.project-explore-head{margin-top:48px}.project-embed-action{white-space:normal}}
+@media(prefers-reduced-motion:reduce){.project-tile{transition:none}.project-tile:hover{transform:none}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><div class="noise"></div>
-<header class="nav"><div class="container nav-inner"><a aria-label="Yervand Sardaryan home" class="logo" href="#home">YS<span>.</span></a><button aria-controls="nav-links" aria-expanded="false" class="menu" type="button">☰ Menu</button><nav aria-label="Main navigation" class="nav-links" id="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#skills">Toolkit</a><a href="ba-knowledge-guide.html">Knowledge Guide</a><a href="#analytics">My Projects</a><a href="#bpmn">BPMN</a><a href="#praemium">Data Aggregation</a><a href="#plat-ai">AI Decisioning</a><a href="#approach">Approach</a><a class="nav-contact" href="#contact">Let's connect ↗</a></nav></div></header>
+<header class="nav"><div class="container nav-inner"><a aria-label="Yervand Sardaryan home" class="logo" href="#analytics">YS<span>.</span></a><button aria-controls="nav-links" aria-expanded="false" class="menu" type="button">☰ Menu</button><nav aria-label="Main navigation" class="nav-links" id="nav-links"><a class="nav-projects-first" href="#analytics">✦ My Projects</a><a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#skills">Toolkit</a><a href="ba-knowledge-guide.html">Knowledge Guide</a><a href="#bpmn">BPMN</a><a href="#praemium">Data Aggregation</a><a href="#plat-ai">AI Decisioning</a><a href="#approach">Approach</a><a class="nav-contact" href="#contact">Let's connect ↗</a></nav></div></header>
 <main id="main">
+<section class="content project-showcase" id="analytics" aria-labelledby="projects-heading"><div class="container project-container">
+<div class="project-showcase-head"><div><div class="project-overline">YERVAND SARDARYAN / SELECTED WORK</div><h2 id="projects-heading">My Projects<span class="project-dot">.</span></h2><p>Explore real, interactive Power BI reports and evidence of how I turn complex business data into decisions.</p></div><div class="project-head-pill">3 <span>LIVE DASHBOARDS</span></div></div>
+<div class="project-gallery"><article class="project-tile" id="payment-powerbi" aria-labelledby="payment-powerbi-title">
+  <div class="project-tile-top"><span class="project-index">01 / FEATURED</span><span class="project-category">FINTECH · PAYMENTS</span></div>
+  <h3 id="payment-powerbi-title">Payment Transaction Analytics</h3>
+  <a class="project-thumb" href="PaymentTransactionAnalyticsBI.png" target="_blank" rel="noopener noreferrer" aria-label="View screenshot: Payment Transaction Analytics"><img src="PaymentTransactionAnalyticsBI.png" width="959" height="529" loading="eager" alt="Payment Transaction Analytics Power BI dashboard preview"/><span class="project-image-action">View screenshot ↗</span></a>
+  <p class="project-description">Explore transaction performance, approvals and declines, processing time, payment channels, and geographic distribution.</p>
+  <div class="project-tags"><span>Payment channels</span><span>Authorization &amp; declines</span><span>Geographic trends</span></div>
+  <div class="project-tile-bottom"><a class="project-open" href="https://app.powerbi.com/view?r=eyJrIjoiYTA0ZWYwMmUtNDhhOC00NWM5LWI0OTgtYzNkYmVhZjM1NWRlIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open interactive Power BI dashboard: Payment Transaction Analytics">Open in Power BI <span aria-hidden="true">↗</span></a><a class="project-inline" href="#payment-powerbi-explore">Explore below ↓</a></div>
+</article>
+<article class="project-tile" id="fraud-powerbi" aria-labelledby="fraud-powerbi-title">
+  <div class="project-tile-top"><span class="project-index">02 / FEATURED</span><span class="project-category">FINTECH · RISK</span></div>
+  <h3 id="fraud-powerbi-title">Credit Card Fraud Risk Analysis</h3>
+  <a class="project-thumb" href="creditcardfraudriskanalysis.png" target="_blank" rel="noopener noreferrer" aria-label="View screenshot: Credit Card Fraud Risk Analysis"><img src="creditcardfraudriskanalysis.png" width="959" height="529" loading="lazy" alt="Credit Card Fraud Risk Analysis Power BI dashboard preview"/><span class="project-image-action">View screenshot ↗</span></a>
+  <p class="project-description">Investigate fraud cases, risk scores, transaction patterns, estimated losses, and merchant and channel exposure.</p>
+  <div class="project-tags"><span>Fraud rate</span><span>Risk scoring</span><span>Estimated fraud loss</span></div>
+  <div class="project-tile-bottom"><a class="project-open" href="https://app.powerbi.com/view?r=eyJrIjoiNDYxMDFlZDktMjA1OC00YWJjLWE4OTItZWI0ZjdkYTdkYjRjIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open interactive Power BI dashboard: Credit Card Fraud Risk Analysis">Open in Power BI <span aria-hidden="true">↗</span></a><a class="project-inline" href="#fraud-powerbi-explore">Explore below ↓</a></div>
+</article>
+<article class="project-tile" id="igaming-player-churn-powerbi" aria-labelledby="igaming-player-churn-powerbi-title">
+  <div class="project-tile-top"><span class="project-index">03 / FEATURED</span><span class="project-category">IGAMING · PLAYER ANALYTICS</span></div>
+  <h3 id="igaming-player-churn-powerbi-title">iGaming Player Analytics</h3>
+  <a class="project-thumb" href="iGamingPlayerChurnAnalysis.png" target="_blank" rel="noopener noreferrer" aria-label="View screenshot: iGaming Player Analytics"><img src="iGamingPlayerChurnAnalysis.png" width="959" height="529" loading="lazy" alt="iGaming Player Churn and Retention Power BI dashboard preview"/><span class="project-image-action">View screenshot ↗</span></a>
+  <p class="project-description">Explore retention and churn alongside player behavior, betting volume, GGR, NGR, and VIP segments across two report pages.</p>
+  <div class="project-tags"><span>Churn &amp; retention</span><span>Player behavior</span><span>Revenue &amp; trends</span></div>
+  <div class="project-tile-bottom"><a class="project-open" href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open interactive Power BI dashboard: iGaming Player Analytics">Open in Power BI <span aria-hidden="true">↗</span></a><a class="project-inline" href="#igaming-player-churn-powerbi-explore">Explore below ↓</a></div>
+</article>
+<article class="project-tile project-coming" aria-label="Business Performance and Sales Intelligence coming next"><div class="project-tile-top"><span class="project-index">04 / NEXT PROJECT</span><span class="project-category">BUSINESS INTELLIGENCE</span></div><div class="project-next-art"><span>✦</span><strong>Next up</strong><small>Business performance &amp; sales intelligence</small></div><h3>Business Performance &amp; Sales Intelligence</h3><p class="project-description">Revenue, profitability, customer growth and commercial KPIs. Currently being built; live dashboard coming later.</p><div class="project-tags"><span>Revenue</span><span>Customer analytics</span><span>Operations</span></div><div class="project-soon">In progress · No report published yet</div></article>
+</div>
+<div class="project-explore-head"><span>EXPLORE THE LIVE REPORTS</span><h3>Interact with the analysis</h3><p>Expand a report below to use its filters and visualizations without leaving this website. These projects use synthetic, non-confidential data.</p></div>
+<div class="project-embeds"><details class="project-embed" id="payment-powerbi-explore"><summary><span class="project-embed-summary"><span class="project-embed-eyebrow">Business performance</span><strong>Payment Transaction Analytics</strong><small>Transactions, authorization and decline rates, channel distribution and geographic reporting.</small></span><span class="project-embed-action">Explore interactive report <span aria-hidden="true">⌄</span></span></summary>
+<div class="project-embed-body"><div class="project-embed-frame"><iframe title="Payment Transaction Analytics — interactive Power BI dashboard" data-src="https://app.powerbi.com/view?r=eyJrIjoiYTA0ZWYwMmUtNDhhOC00NWM5LWI0OTgtYzNkYmVhZjM1NWRlIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="project-embed-footer"><span>Use the charts and filters in the live Power BI report.</span><a href="https://app.powerbi.com/view?r=eyJrIjoiYTA0ZWYwMmUtNDhhOC00NWM5LWI0OTgtYzNkYmVhZjM1NWRlIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open larger Power BI view ↗</a></div></div></details>
+<details class="project-embed" id="fraud-powerbi-explore"><summary><span class="project-embed-summary"><span class="project-embed-eyebrow">Fraud monitoring</span><strong>Credit Card Fraud Risk Analysis</strong><small>Synthetic data · 10,000 transactions · Fraud flags, risk profiles, merchant segments and estimated loss.</small></span><span class="project-embed-action">Explore interactive report <span aria-hidden="true">⌄</span></span></summary>
+<div class="project-embed-body"><div class="project-embed-frame"><iframe title="Credit Card Fraud Risk Analysis — interactive Power BI dashboard" data-src="https://app.powerbi.com/view?r=eyJrIjoiNDYxMDFlZDktMjA1OC00YWJjLWE4OTItZWI0ZjdkYTdkYjRjIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="project-embed-footer"><span>Use the charts and filters in the live Power BI report.</span><a href="https://app.powerbi.com/view?r=eyJrIjoiNDYxMDFlZDktMjA1OC00YWJjLWE4OTItZWI0ZjdkYTdkYjRjIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open larger Power BI view ↗</a></div></div></details>
+<details class="project-embed" id="igaming-player-churn-powerbi-explore"><summary><span class="project-embed-summary"><span class="project-embed-eyebrow">Two-page report</span><strong>iGaming Player Analytics</strong><small>Page 01: Player Churn &amp; Retention · Page 02: Player Behavior, Revenue &amp; Trends. Use the report page selector inside Power BI to switch pages.</small></span><span class="project-embed-action">Explore interactive report <span aria-hidden="true">⌄</span></span></summary>
+<div class="project-embed-body"><div class="project-embed-frame"><iframe title="iGaming Player Analytics — interactive Power BI dashboard" data-src="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="project-embed-footer"><span>Use the charts and filters in the live Power BI report.</span><a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open larger Power BI view ↗</a></div></div></details></div>
+<p class="project-disclaimer">All three published reports are independent demonstration projects. Original Power BI files and underlying datasets are kept private. The fourth project is a planned addition, not a published report.</p>
+</div></section>
+
 <section class="hero" id="home"><div class="container hero-grid"><div><div class="status"><span class="dot"></span> Open to new opportunities · Yerevan, Armenia</div><div class="eyebrow">Business Analysis · Financial Technology</div><h1>Turning complex systems into <em>clear solutions.</em></h1><p class="lead">I'm <strong>Yervand Sardaryan</strong>, an IT Business &amp; Systems Analyst with <strong>6+ years of experience</strong> in FinTech, payments, banking, and fraud prevention. I bridge business goals and technical execution to deliver reliable, scalable digital solutions.</p><div class="actions"><a class="btn btn-primary" href="#contact">Get in touch ↗</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/yervandsardaryan/" rel="noopener noreferrer" target="_blank">View LinkedIn ↗</a><a class="btn btn-secondary" download="Yervand_Sardaryan_CV.pdf" href="TechnicalBAYervandSardaryan.pdf" type="application/pdf">↓ Download CV (PDF)</a></div><div class="hero-facts"><div class="fact"><strong>6+</strong><span>Years in business analysis</span></div><div class="fact"><strong>FinTech</strong><span>Payments &amp; banking focus</span></div><div class="fact"><strong>API-first</strong><span>Technical analysis mindset</span></div></div></div><aside aria-label="Profile card" class="hero-card"><div class="monogram">YS</div><div class="card-caption"><div><strong>Yervand Sardaryan</strong><small>Business &amp; Systems Analyst<br/>Yerevan, Armenia</small></div><span class="card-mark">✳</span></div></aside></div></section>
 <section class="content" id="about"><div class="container"><div class="section-head"><div class="section-kicker">01 / Profile</div><h2>Business thinking.<br/>Technical depth.</h2></div><div class="about-grid"><div class="about-copy"><p>My work sits at the intersection of <strong>stakeholder needs, systems design, and delivery</strong>. I turn complex business processes into clear requirements, actionable technical specifications, and testable outcomes.</p><p>From payment processing and banking integrations to fraud detection and production support, I collaborate with product teams, developers, architects, and QA to make solutions work end to end.</p></div><div><div class="section-kicker">Domains I work across</div><div class="pill-row"><span class="pill">Payment Processing</span><span class="pill">Card Issuing &amp; Acquiring</span><span class="pill">Fraud Detection</span><span class="pill">Core Banking</span><span class="pill">API Integrations</span><span class="pill">Digital Onboarding</span><span class="pill">Financial Services</span><span class="pill">AI / ML Solutions</span></div></div></div></div></section>
 <section class="content" id="expertise"><div class="container"><div class="section-head"><div class="section-kicker">02 / Expertise</div><h2>Where I add value</h2><p>Combining business analysis discipline with the practical technical understanding needed for complex financial platforms.</p></div><div class="focus-grid"><article class="focus-card"><div class="icon">◈</div><h3>Payments &amp; Banking</h3><p>Transaction lifecycles, card processing, issuing and acquiring, financial system integrations, and core banking workflows.</p></article><article class="focus-card"><div class="icon">◎</div><h3>Fraud &amp; Risk Technology</h3><p>Real-time fraud prevention, transaction data, risk indicators, decision flows, and AI/ML-assisted solutions.</p></article><article class="focus-card"><div class="icon">⌘</div><h3>Business &amp; Systems Analysis</h3><p>Requirements elicitation, functional and technical specifications, workflow analysis, user stories, and acceptance criteria.</p><a class="knowledge-card-link" href="ba-knowledge-guide.html">Explore BA Knowledge Hub <span aria-hidden="true">↗</span></a></article><article class="focus-card"><div class="icon">↔</div><h3>APIs &amp; Integrations</h3><p>REST APIs, OpenAPI specifications, payload mapping, event-driven workflows, and cross-system dependencies.</p></article><article class="focus-card"><div class="icon">▣</div><h3>Delivery &amp; Quality</h3><p>Agile collaboration, backlog refinement, QA and UAT coordination, issue analysis, and release support.</p></article><article class="focus-card"><div class="icon">✧</div><h3>AI-Enhanced Analysis</h3><p>Exploring practical ways to use LLMs and AI agents to accelerate documentation, analysis, and everyday BA workflows.</p></article></div></div></section>
@@ -252,113 +352,6 @@
 <div class="skill-group"><h3>AI &amp; Automation</h3><ul><li>ChatGPT, Claude &amp; Cursor</li><li>AI/LLM-assisted requirements analysis</li><li>AI agents for BA workflow automation</li><li>Prompting, research &amp; synthesis</li><li>Document review &amp; productivity workflows</li><li>Critical thinking &amp; continuous improvement</li></ul></div>
 </div><p class="toolkit-footnote">For additional details, see my <a href="https://www.linkedin.com/in/yervandsardaryan/" rel="noopener noreferrer" target="_blank">LinkedIn profile ↗</a> or download my CV.</p></div></section>
 <section class="content" id="approach"><div class="container"><div class="section-head"><div class="section-kicker">05 / How I work</div><h2>From ambiguity to delivery</h2></div><div class="process-grid"><div class="process-card"><div class="num">01</div><h3>Understand</h3><p>Explore business goals, stakeholders, constraints, and the actual problem to solve.</p></div><div class="process-card"><div class="num">02</div><h3>Structure</h3><p>Model current and future processes, define requirements, and clarify edge cases.</p></div><div class="process-card"><div class="num">03</div><h3>Align</h3><p>Work with engineering and product teams on feasible solutions and acceptance criteria.</p></div><div class="process-card"><div class="num">04</div><h3>Validate</h3><p>Support testing, implementation, and production readiness with traceable outcomes.</p></div></div></div></section>
-
-<section class="content" id="analytics"><div class="container">
-<div class="section-kicker">06 / My Projects</div>
-<h2>My Projects<span class="project-heading-period">.</span></h2>
-<p class="bi-intro">Explore three interactive Power BI dashboards built with synthetic data. Use the dashboards directly on this page or open the full report in a new tab.</p>
-<p class="bi-intro">I bring business analysis and data analytics together to define meaningful KPIs, translate reporting requirements into clear metrics, and communicate insights. My toolkit includes Power BI, SQL, Excel, Tableau, Snowflake and data modeling techniques.</p>
-<div class="bi-highlight"><h3>Power BI &amp; analytics workflow</h3><p>Business questions &rarr; KPI definitions &rarr; data preparation &amp; modeling &rarr; DAX measures &rarr; visual storytelling &rarr; business decisions. The case studies below pair report screenshots and documented analysis with live, interactive Power BI dashboards.</p></div>
-<article class="bi-feature" aria-labelledby="payment-title">
-  <a class="bi-preview" href="PaymentTransactionAnalyticsBI.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Power BI dashboard screenshot">
-    <img src="PaymentTransactionAnalyticsBI.png" alt="Payment Transaction Analytics Power BI report with KPI cards, country transaction bubble map, geographic transaction share chart, channel volumes, decline analysis and cumulative transaction trends" loading="lazy" width="959" height="528" />
-    <span>View full dashboard preview ↗</span>
-  </a>
-  <div class="bi-feature-copy">
-    <span class="bi-eyebrow">Completed Power BI report · Synthetic data</span>
-    <h3 id="payment-title">Payment Transaction Analytics</h3>
-    <p>Explore payment activity, authorization and decline rates, processing time, payment channel performance, geographic transaction distribution, and the leading reasons for declined transactions.</p>
-    <p><strong>Included analysis:</strong> Executive KPI cards, a country-level payment volume map, geographic transaction share by country, cumulative transaction trends, channel comparisons, and decline reason analysis.</p>
-    <a class="bi-download" href="PaymentTransactionAnalyticsBI.png" target="_blank" rel="noopener noreferrer">↗ View dashboard preview</a>
-    <span class="bi-download-hint">Full-size dashboard preview · Original report and data are stored privately.</span>
-    <div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>Payment Analytics</span><span>Geographic Analytics</span><span>Data Visualization</span><span>Synthetic Data</span></div>
-  </div>
-</article>
-<div class="live-report-actions" aria-label="Payment Transaction Analytics live Power BI links">
-  <a class="live-report-button" href="https://app.powerbi.com/view?r=eyJrIjoiYTA0ZWYwMmUtNDhhOC00NWM5LWI0OTgtYzNkYmVhZjM1NWRlIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open Payment Transaction Analytics live Power BI dashboard in a new tab">↗ Open Interactive Dashboard</a>
-  <span class="live-report-hint">Free public report · No login required</span>
-</div>
-<details class="live-report-panel" open>
-  <summary><span class="live-report-prompt">▶ Explore this report here</span><span class="live-report-chevron" aria-hidden="true">⌄</span></summary>
-  <div class="live-report-content">
-    <div class="live-report-frame"><iframe loading="lazy" title="Payment Transaction Analytics — Interactive Power BI report" src="https://app.powerbi.com/view?r=eyJrIjoiYTA0ZWYwMmUtNDhhOC00NWM5LWI0OTgtYzNkYmVhZjM1NWRlIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-    <p class="live-report-footer">Interact with charts, slicers, and filters above. <a href="https://app.powerbi.com/view?r=eyJrIjoiYTA0ZWYwMmUtNDhhOC00NWM5LWI0OTgtYzNkYmVhZjM1NWRlIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open a larger full-screen view ↗</a></p>
-  </div>
-</details>
-
-<article class="bi-feature fraud-bi-feature" id="fraud-powerbi" aria-labelledby="fraud-pbi-title">
-  <a class="bi-preview" href="creditcardfraudriskanalysis.png" target="_blank" rel="noopener noreferrer" aria-label="View full-size Credit Card Fraud Risk Analysis Power BI dashboard screenshot">
-    <img src="creditcardfraudriskanalysis.png" alt="Credit Card Fraud Risk Analysis Power BI dashboard with transaction and fraud KPI charts, fraud rate by merchant category, channel comparisons, transaction volume by country, estimated fraud loss, and a fraud trend chart" loading="lazy" width="926" height="493"/>
-    <span>View fraud dashboard screenshot ↗</span>
-  </a>
-  <div class="bi-feature-copy">
-    <span class="bi-eyebrow">Completed Power BI report · Independent project · Synthetic data</span>
-    <h3 id="fraud-pbi-title">Credit Card Fraud Risk Analysis</h3>
-    <p>An independent Power BI case study exploring credit card transaction behavior, confirmed fraud, geographic and merchant exposure, risk scoring, and the estimated financial impact of fraud. Built with a synthetic dataset of 10,000 transactions; no real customer or employer data is used.</p>
-    <p><strong>Included analysis:</strong> Transaction and fraud KPI measures, fraud rate, total transaction volume, estimated fraud loss, average risk score, fraud by channel and merchant category, country-level transaction volume, and fraud trends.</p>
-    <a class="bi-download" href="creditcardfraudriskanalysis.png" target="_blank" rel="noopener noreferrer">↗ View full dashboard preview</a>
-    <span class="bi-download-hint">Dashboard screenshot only · Editable Power BI (.pbix) source kept private.</span>
-    <div class="bi-tags"><span>Power BI Desktop</span><span>DAX Measures</span><span>Credit Card Fraud</span><span>Risk Analytics</span><span>Transaction Monitoring</span><span>Synthetic Data</span></div>
-  </div>
-</article>
-<div class="live-report-actions" aria-label="Credit Card Fraud Risk Analysis live Power BI links">
-  <a class="live-report-button" href="https://app.powerbi.com/view?r=eyJrIjoiNDYxMDFlZDktMjA1OC00YWJjLWE4OTItZWI0ZjdkYTdkYjRjIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open Credit Card Fraud Risk Analysis live Power BI dashboard in a new tab">↗ Open Interactive Dashboard</a>
-  <span class="live-report-hint">Free public report · No login required</span>
-</div>
-<details class="live-report-panel">
-  <summary><span class="live-report-prompt">▶ Explore this report here</span><span class="live-report-chevron" aria-hidden="true">⌄</span></summary>
-  <div class="live-report-content">
-    <div class="live-report-frame"><iframe loading="lazy" title="Credit Card Fraud Risk Analysis — Interactive Power BI report" src="https://app.powerbi.com/view?r=eyJrIjoiNDYxMDFlZDktMjA1OC00YWJjLWE4OTItZWI0ZjdkYTdkYjRjIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-    <p class="live-report-footer">Interact with charts, slicers, and filters above. <a href="https://app.powerbi.com/view?r=eyJrIjoiNDYxMDFlZDktMjA1OC00YWJjLWE4OTItZWI0ZjdkYTdkYjRjIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open a larger full-screen view ↗</a></p>
-  </div>
-</details>
-
-
-<article class="bi-feature churn-bi-feature" id="igaming-player-churn-powerbi" aria-labelledby="igaming-churn-title">
-  <a class="bi-preview" href="iGamingPlayerChurnAnalysis.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size iGaming Player Churn and Retention Power BI report screenshot">
-    <img src="iGamingPlayerChurnAnalysis.png" alt="iGaming player churn report with 10,000 total players, 2,456 churned players, 30.52% churn rate, 8,047 eligible players, 4,088 active players and 1,747 at-risk players; visualizations compare churn by VIP tier, acquisition channel, game category and country, GGR by VIP tier, lifecycle status and registration cohorts." loading="lazy" width="959" height="529" />
-    <span>View full iGaming dashboard ↗</span>
-  </a>
-  <div class="bi-feature-copy">
-    <span class="bi-eyebrow">Completed Power BI report · 2 interactive pages · Synthetic iGaming data</span>
-    <h3 id="igaming-churn-title">iGaming Analytics — Player Churn, Behavior &amp; Revenue</h3>
-    <p>Explore player engagement and retention for a synthetic portfolio of <strong>10,000 players</strong>. The snapshot identifies <strong>2,456 churned players</strong> and a <strong>30.52% churn rate</strong> among <strong>8,047 eligible players</strong>, alongside active, at-risk and never-activated segments.</p>
-    <p><strong>Page 1 — Player Churn &amp; Retention:</strong> Churn rate by VIP tier, acquisition channel and country; churned players by preferred game category; GGR by VIP tier; lifecycle distribution; and registration-cohort retention.</p>
-    <p><strong>Page 2 — Player Behavior, Revenue &amp; Trends:</strong> Betting volume, stakes, average bet value, GGR and NGR, deposits, withdrawals, player activity and preferred gaming categories.</p>
-    <p><strong>Methodology:</strong> Churn is defined as 60+ days since the last real-money wager for eligible players. Cohort comparisons reflect status at the snapshot date, not historical month-by-month retention. All player and financial data are simulated, not employer or production data.</p>
-    <a class="bi-download" href="iGamingPlayerChurnAnalysis.png" target="_blank" rel="noopener noreferrer">↗ View full dashboard preview</a>
-    <span class="bi-download-hint">Screenshot of the original churn page · Both report pages are available in the interactive embed below. Editable .pbix and player data remain private.</span>
-    <div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>iGaming Analytics</span><span>Player Churn</span><span>Retention</span><span>VIP Segmentation</span><span>GGR</span><span>Synthetic Data</span></div>
-  </div>
-</article>
-<div class="igaming-project-header" aria-label="iGaming Analytics report pages">
-  <span class="igaming-project-kicker">iGaming Analytics · Interactive Power BI · Two report pages</span>
-  <h3>Player Churn, Behavior, Revenue &amp; Trends</h3>
-  <p>Explore both dashboards within the same published Power BI report. Use the <strong>report page tabs or page navigator inside Power BI</strong> to move between them.</p>
-  <div class="igaming-page-overview" aria-label="The two report pages">
-    <div class="igaming-page-card"><span>PAGE 01</span><strong>Player Churn &amp; Retention</strong><small>Churn rate · VIP segmentation · lifecycle · cohort retention</small></div>
-    <div class="igaming-page-card"><span>PAGE 02</span><strong>Player Behavior, Revenue &amp; Trends</strong><small>Bets · stakes · GGR / NGR · deposits · withdrawals</small></div>
-  </div>
-</div>
-<div class="live-report-actions" aria-label="iGaming two-page analytics live Power BI links">
-  <a class="live-report-button" href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open two-page iGaming Analytics Power BI report in a new tab">↗ Open Interactive Dashboard</a>
-  <span class="live-report-hint">Free public report · No login required</span>
-</div>
-<details class="live-report-panel">
-  <summary><span class="live-report-prompt">▶ Explore this report here</span><span class="live-report-chevron" aria-hidden="true">⌄</span></summary>
-  <div class="live-report-content">
-    <div class="live-report-frame"><iframe loading="lazy" title="iGaming Analytics — two-page Player Churn and Behavior Power BI report" src="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-    <p class="live-report-footer">Switch between the two pages using the Power BI page tabs or navigator. If these are hidden, use the larger view. <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open a larger full-screen view ↗</a></p>
-  </div>
-</details>
-
-<div class="bi-cards" aria-label="Upcoming analytics case studies">
-
-
-<article class="bi-card"><span class="bi-eyebrow">Portfolio concept · In development</span><h3>Core Banking Performance</h3><p>Model an executive view of customers, loans, deposits, portfolio health, and servicing trends, with business-friendly definitions for each measure.</p><div class="bi-tags"><span>Power BI</span><span>Banking</span><span>Data Modeling</span></div></article>
-</div>
-<p class="bi-note">Three completed, publicly interactive Power BI reports are presented above: Payment Transaction Analytics, Credit Card Fraud Risk Analysis, and iGaming Player Churn &amp; Retention Analysis (synthetic player data). They are independent analytics demonstrations, not employer reports. Editable .pbix files and underlying datasets are not published. Core Banking Performance remains a proposed case study.</p>
-</div></section>
 
 <section class="content" id="bpmn"><div class="container">
   <div class="section-kicker">07 / Business Process Modeling</div>
@@ -428,5 +421,25 @@
 </main>
 <footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> Yervand Sardaryan. Built with intention.</span><div><a href="#home">Back to top ↑</a><a href="https://www.linkedin.com/in/yervandsardaryan/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a></div></div></footer>
 <script>document.querySelector('#year').textContent=new Date().getFullYear();const toggle=document.querySelector('.menu');const links=document.querySelector('#nav-links');toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.project-embed').forEach(function(panel){
+    function loadIfOpen(){
+      if(!panel.open)return;
+      const frame=panel.querySelector('iframe[data-src]');
+      if(frame){frame.src=frame.dataset.src;frame.removeAttribute('data-src');}
+    }
+    panel.addEventListener('toggle',loadIfOpen);
+    if(location.hash==='#'+panel.id){panel.open=true;loadIfOpen();}
+  });
+  document.querySelectorAll('a.project-inline').forEach(function(link){
+    link.addEventListener('click',function(){
+      const target=document.querySelector(link.getAttribute('href'));
+      if(target)target.open=true;
+    });
+  });
+})();
+</script>
 </body>
 </html>
