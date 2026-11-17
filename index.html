@@ -180,6 +180,18 @@
 .live-report-footer{margin:12px 2px 2px;color:var(--muted);font-size:12px}
 .live-report-footer a{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.live-report-content{padding:8px}.live-report-frame{aspect-ratio:4/5;min-height:390px}.live-report-panel>summary{padding:14px}}
+
+/* Two-page iGaming report overview above the Power BI iframe */
+.igaming-project-header{margin:26px 0 14px;padding:27px;border:1px solid #497d80;border-radius:19px;background:linear-gradient(120deg,#173d44,#11263a)}
+.igaming-project-kicker{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.14em;font-weight:800}
+.igaming-project-header h3{font:800 clamp(23px,2.9vw,34px)/1.24 Manrope,sans-serif;margin:12px 0 7px}
+.igaming-project-header p{color:#d0e4e9;font-size:14px;max-width:850px;margin:0 0 18px}
+.igaming-page-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.igaming-page-card{padding:19px;border:1px solid #44727b;background:#12283b;border-radius:13px;display:flex;flex-direction:column;gap:6px}
+.igaming-page-card span{font-size:10px;letter-spacing:.14em;color:var(--accent);font-weight:800}
+.igaming-page-card strong{font:800 16px/1.4 Manrope,sans-serif}
+.igaming-page-card small{font-size:12px;color:var(--muted);line-height:1.5}
+@media(max-width:650px){.igaming-project-header{padding:19px}.igaming-page-overview{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -308,25 +320,35 @@
     <span>View full iGaming dashboard ↗</span>
   </a>
   <div class="bi-feature-copy">
-    <span class="bi-eyebrow">Completed Power BI report · Independent project · Synthetic iGaming data</span>
-    <h3 id="igaming-churn-title">iGaming Player Churn &amp; Retention Analysis</h3>
+    <span class="bi-eyebrow">Completed Power BI report · 2 interactive pages · Synthetic iGaming data</span>
+    <h3 id="igaming-churn-title">iGaming Analytics — Player Churn, Behavior &amp; Revenue</h3>
     <p>Explore player engagement and retention for a synthetic portfolio of <strong>10,000 players</strong>. The snapshot identifies <strong>2,456 churned players</strong> and a <strong>30.52% churn rate</strong> among <strong>8,047 eligible players</strong>, alongside active, at-risk and never-activated segments.</p>
-    <p><strong>Included analysis:</strong> Churn rate by VIP tier, acquisition channel and country; churned players by preferred game category; gross gaming revenue (GGR) by VIP tier; player lifecycle distribution; and retention comparisons across registration cohorts.</p>
+    <p><strong>Page 1 — Player Churn &amp; Retention:</strong> Churn rate by VIP tier, acquisition channel and country; churned players by preferred game category; GGR by VIP tier; lifecycle distribution; and registration-cohort retention.</p>
+    <p><strong>Page 2 — Player Behavior, Revenue &amp; Trends:</strong> Betting volume, stakes, average bet value, GGR and NGR, deposits, withdrawals, player activity and preferred gaming categories.</p>
     <p><strong>Methodology:</strong> Churn is defined as 60+ days since the last real-money wager for eligible players. Cohort comparisons reflect status at the snapshot date, not historical month-by-month retention. All player and financial data are simulated, not employer or production data.</p>
     <a class="bi-download" href="iGamingPlayerChurnAnalysis.png" target="_blank" rel="noopener noreferrer">↗ View full dashboard preview</a>
-    <span class="bi-download-hint">Screenshot preview · Editable Power BI report and underlying player data remain private.</span>
+    <span class="bi-download-hint">Screenshot of the original churn page · Both report pages are available in the interactive embed below. Editable .pbix and player data remain private.</span>
     <div class="bi-tags"><span>Power BI Desktop</span><span>DAX</span><span>iGaming Analytics</span><span>Player Churn</span><span>Retention</span><span>VIP Segmentation</span><span>GGR</span><span>Synthetic Data</span></div>
   </div>
 </article>
-<div class="live-report-actions" aria-label="iGaming Player Churn and Retention Analysis live Power BI links">
-  <a class="live-report-button" href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open iGaming Player Churn and Retention Analysis live Power BI dashboard in a new tab">↗ Open Interactive Dashboard</a>
+<div class="igaming-project-header" aria-label="iGaming Analytics report pages">
+  <span class="igaming-project-kicker">iGaming Analytics · Interactive Power BI · Two report pages</span>
+  <h3>Player Churn, Behavior, Revenue &amp; Trends</h3>
+  <p>Explore both dashboards within the same published Power BI report. Use the <strong>report page tabs or page navigator inside Power BI</strong> to move between them.</p>
+  <div class="igaming-page-overview" aria-label="The two report pages">
+    <div class="igaming-page-card"><span>PAGE 01</span><strong>Player Churn &amp; Retention</strong><small>Churn rate · VIP segmentation · lifecycle · cohort retention</small></div>
+    <div class="igaming-page-card"><span>PAGE 02</span><strong>Player Behavior, Revenue &amp; Trends</strong><small>Bets · stakes · GGR / NGR · deposits · withdrawals</small></div>
+  </div>
+</div>
+<div class="live-report-actions" aria-label="iGaming two-page analytics live Power BI links">
+  <a class="live-report-button" href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Open two-page iGaming Analytics Power BI report in a new tab">↗ Open Interactive Dashboard</a>
   <span class="live-report-hint">Free public report · No login required</span>
 </div>
 <details class="live-report-panel">
   <summary><span class="live-report-prompt">▶ Explore this report here</span><span class="live-report-chevron" aria-hidden="true">⌄</span></summary>
   <div class="live-report-content">
-    <div class="live-report-frame"><iframe loading="lazy" title="iGaming Player Churn and Retention Analysis — Interactive Power BI report" src="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-    <p class="live-report-footer">Interact with charts, slicers, and filters above. <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open a larger full-screen view ↗</a></p>
+    <div class="live-report-frame"><iframe loading="lazy" title="iGaming Analytics — two-page Player Churn and Behavior Power BI report" src="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" allowfullscreen="" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <p class="live-report-footer">Switch between the two pages using the Power BI page tabs or navigator. If these are hidden, use the larger view. <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ3NmMxYTYtNjQ0Ni00MzNkLWEwZDktOGIzZjNiOWNjMmVmIiwidCI6IjU2YzRkYjhmLWRjYzMtNGUxZS1hMTU0LWM4YzQ2MGIwODY0ZSIsImMiOjEwfQ%3D%3D" target="_blank" rel="noopener noreferrer">Open a larger full-screen view ↗</a></p>
   </div>
 </details>
 
