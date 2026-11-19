@@ -11,73 +11,73 @@
         {
           "key": "1_margin",
           "label": "Product 1 — Margin %",
-          "answer": 51.4,
+          "answer": 24.69093,
           "kind": "percent"
         },
         {
           "key": "1_net",
           "label": "Product 1 — Net profit",
-          "answer": 4930,
+          "answer": 12995,
           "kind": "number"
         },
         {
           "key": "1_netMargin",
           "label": "Product 1 — Net margin %",
-          "answer": 49.3,
+          "answer": 22.31284,
           "kind": "number"
         },
         {
           "key": "2_margin",
           "label": "Product 2 — Margin %",
-          "answer": 20.31873,
+          "answer": 31.01054,
           "kind": "percent"
         },
         {
           "key": "2_net",
           "label": "Product 2 — Net profit",
-          "answer": 2228,
+          "answer": 11008,
           "kind": "number"
         },
         {
           "key": "2_netMargin",
           "label": "Product 2 — Net margin %",
-          "answer": 17.75299,
+          "answer": 26.36015,
           "kind": "number"
         },
         {
           "key": "3_margin",
           "label": "Product 3 — Margin %",
-          "answer": 8.31601,
+          "answer": 24.72607,
           "kind": "percent"
         },
         {
           "key": "3_net",
           "label": "Product 3 — Net profit",
-          "answer": 1730,
+          "answer": 19362,
           "kind": "number"
         },
         {
           "key": "3_netMargin",
           "label": "Product 3 — Net margin %",
-          "answer": 7.19335,
+          "answer": 21.42999,
           "kind": "number"
         },
         {
           "key": "4_margin",
           "label": "Product 4 — Margin %",
-          "answer": 21.85771,
+          "answer": 23.83841,
           "kind": "percent"
         },
         {
           "key": "4_net",
           "label": "Product 4 — Net profit",
-          "answer": 4972,
+          "answer": 15965,
           "kind": "number"
         },
         {
           "key": "4_netMargin",
           "label": "Product 4 — Net margin %",
-          "answer": 19.65217,
+          "answer": 20.60532,
           "kind": "number"
         }
       ],
@@ -90,7 +90,7 @@
       "title": "Highest total cost",
       "prompt": "2. Which among the Products above have the highest Total Cost?",
       "mode": "number",
-      "expected": 4,
+      "expected": 3,
       "fields": null,
       "notes": "Total cost = bonus cost + transaction cost; answer with the product number.",
       "tag": "From uploaded assessment"
@@ -101,7 +101,7 @@
       "title": "Highest average amount per bet",
       "prompt": "3. Which among the Products above draw in the highest Average Amount per Bet?",
       "mode": "number",
-      "expected": 2,
+      "expected": 4,
       "fields": null,
       "notes": "",
       "tag": "From uploaded assessment"
@@ -123,7 +123,7 @@
       "title": "Highest bets per customer",
       "prompt": "5. Which Product takes in the most number of bets per customer?",
       "mode": "number",
-      "expected": 4,
+      "expected": 3,
       "fields": null,
       "notes": "",
       "tag": "From uploaded assessment"
@@ -401,7 +401,7 @@
       "mode": "sql",
       "expected": null,
       "fields": null,
-      "notes": "Write a SQLite query using table transactions_current.",
+      "notes": "Write a SQLite query using table transactions_hst.",
       "tag": "From uploaded SQL assessment",
       "check": "bank"
     },
@@ -413,7 +413,7 @@
       "mode": "sql",
       "expected": null,
       "fields": null,
-      "notes": "Write a SQLite query using table transactions_current.",
+      "notes": "Write a SQLite query using table transactions_hst.",
       "tag": "From uploaded SQL assessment",
       "check": "type"
     },
@@ -425,7 +425,7 @@
       "mode": "sql",
       "expected": null,
       "fields": null,
-      "notes": "Write a SQLite query using table transactions_current.",
+      "notes": "Write a SQLite query using table transactions_hst.",
       "tag": "From uploaded SQL assessment",
       "check": "method"
     },
@@ -449,7 +449,7 @@
       "mode": "sql",
       "expected": null,
       "fields": null,
-      "notes": "Write a SQLite query using table transactions_current.",
+      "notes": "Write a SQLite query using table transactions_hst.",
       "tag": "Additional advanced example",
       "check": "declines"
     },
@@ -461,7 +461,7 @@
       "mode": "sql",
       "expected": null,
       "fields": null,
-      "notes": "Write a SQLite query using table transactions_current.",
+      "notes": "Write a SQLite query using table transactions_hst.",
       "tag": "Additional advanced example",
       "check": "rank"
     },
@@ -473,7 +473,7 @@
       "mode": "sql",
       "expected": null,
       "fields": null,
-      "notes": "Write a SQLite query using table transactions_current.",
+      "notes": "Write a SQLite query using table transactions_hst.",
       "tag": "Additional advanced example",
       "check": "duplicates"
     }
@@ -481,39 +481,39 @@
   "products": [
     {
       "product": 1,
-      "customers": 220,
-      "bets": 3520,
-      "turnover": 10000,
-      "grossProfit": 5140,
-      "bonus": 200,
-      "transactionCost": 10
+      "customers": 315,
+      "bets": 4875,
+      "turnover": 58240,
+      "grossProfit": 14380,
+      "bonus": 1140,
+      "transactionCost": 245
     },
     {
       "product": 2,
-      "customers": 100,
-      "bets": 1000,
-      "turnover": 12550,
-      "grossProfit": 2550,
-      "bonus": 300,
-      "transactionCost": 22
+      "customers": 184,
+      "bets": 2416,
+      "turnover": 41760,
+      "grossProfit": 12950,
+      "bonus": 1760,
+      "transactionCost": 182
     },
     {
       "product": 3,
-      "customers": 125,
-      "bets": 2300,
-      "turnover": 24050,
-      "grossProfit": 2000,
-      "bonus": 250,
-      "transactionCost": 20
+      "customers": 268,
+      "bets": 6728,
+      "turnover": 90350,
+      "grossProfit": 22340,
+      "bonus": 2580,
+      "transactionCost": 398
     },
     {
       "product": 4,
-      "customers": 102,
-      "bets": 2541,
-      "turnover": 25300,
-      "grossProfit": 5530,
-      "bonus": 550,
-      "transactionCost": 8
+      "customers": 146,
+      "bets": 3149,
+      "turnover": 77480,
+      "grossProfit": 18470,
+      "bonus": 2140,
+      "transactionCost": 365
     }
   ],
   "clients": [
