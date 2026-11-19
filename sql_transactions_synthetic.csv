@@ -1,0 +1,61 @@
+Transaction_ID,Customer_ID,Transaction_Date,Transaction_Type,Status,Payment_Method,Amount,Country
+TX0001,C012,2026-02-03,Withdrawal,Successful,PopoPay,380.25,Georgia
+TX0002,C023,2026-03-05,Withdrawal,Successful,Bank,650.5,India
+TX0003,C003,2026-04-07,Withdrawal,Successful,Bank,920.75,United Kingdom
+TX0004,C014,2026-05-09,Withdrawal,Successful,TyraTransfer,1190.0,France
+TX0005,C025,2026-06-11,Remittance,Successful,Bank,1075.25,Germany
+TX0006,C005,2026-07-13,Remittance,Successful,GCash,1345.5,Armenia
+TX0007,C016,2026-08-15,Remittance,Declined,Bank,1615.75,Georgia
+TX0008,C027,2026-09-17,Transfer-In,Successful,PopoPay,1885.0,India
+TX0009,C007,2026-10-19,Deposit,Successful,Bank,2155.25,United Kingdom
+TX0010,C018,2026-01-21,Deposit,Successful,KanorPay,2040.5,France
+TX0011,C029,2026-02-23,Deposit,Successful,Bank,2310.75,Germany
+TX0012,C009,2026-03-25,Remittance,Successful,Bank,2580.0,Armenia
+TX0013,C020,2026-04-27,Deposit,Declined,TyraTransfer,2850.25,Georgia
+TX0014,C031,2026-05-02,Transfer-In,Declined,Bank,3120.5,India
+TX0015,C011,2026-06-04,Withdrawal,Successful,GCash,3005.75,United Kingdom
+TX0016,C022,2026-07-06,Transfer-In,Successful,Bank,3275.0,France
+TX0017,C002,2026-08-08,Deposit,Successful,Bank,3545.25,Germany
+TX0018,C013,2026-09-10,Deposit,Successful,Bank,365.5,Armenia
+TX0019,C024,2026-10-12,Deposit,Successful,KanorPay,635.75,Georgia
+TX0020,C004,2026-01-14,Withdrawal,Successful,PopoPay,520.0,India
+TX0021,C015,2026-02-16,Withdrawal,Declined,Bank,790.25,United Kingdom
+TX0022,C026,2026-03-18,Remittance,Successful,PopoPay,1060.5,France
+TX0023,C006,2026-04-20,Remittance,Successful,Bank,1330.75,Germany
+TX0024,C017,2026-05-22,Remittance,Successful,PopoPay,1600.0,Armenia
+TX0025,C028,2026-06-24,Deposit,Successful,TyraTransfer,1485.25,Georgia
+TX0026,C008,2026-07-26,Transfer-In,Declined,Bank,1755.5,India
+TX0027,C019,2026-08-01,Withdrawal,Successful,GCash,2025.75,United Kingdom
+TX0028,C030,2026-09-03,Transfer-In,Declined,Bank,2295.0,France
+TX0029,C010,2026-10-05,Remittance,Successful,GCash,2565.25,Germany
+TX0030,C021,2026-01-07,Withdrawal,Successful,Bank,2450.5,Armenia
+TX0031,C001,2026-02-09,Deposit,Successful,KanorPay,2720.75,Georgia
+TX0032,C012,2026-03-11,Transfer-In,Successful,Bank,2990.0,India
+TX0033,C023,2026-04-13,Remittance,Successful,Bank,3260.25,United Kingdom
+TX0034,C003,2026-05-15,Deposit,Successful,PopoPay,3530.5,France
+TX0035,C014,2026-06-17,Withdrawal,Declined,Bank,3415.75,Germany
+TX0036,C025,2026-07-19,Deposit,Successful,PopoPay,235.0,Armenia
+TX0037,C005,2026-08-21,Withdrawal,Successful,Bank,505.25,Georgia
+TX0038,C016,2026-09-23,Transfer-In,Successful,Bank,775.5,India
+TX0039,C027,2026-10-25,Deposit,Declined,Bank,1045.75,United Kingdom
+TX0040,C007,2026-01-27,Withdrawal,Successful,KanorPay,930.0,France
+TX0041,C018,2026-02-02,Remittance,Successful,TyraTransfer,1200.25,Germany
+TX0042,C029,2026-03-04,Transfer-In,Declined,Bank,1470.5,Armenia
+TX0043,C009,2026-04-06,Transfer-In,Successful,GCash,1740.75,Georgia
+TX0044,C020,2026-05-08,Transfer-In,Successful,Bank,2010.0,India
+TX0045,C031,2026-06-10,Withdrawal,Successful,PopoPay,1895.25,United Kingdom
+TX0046,C011,2026-07-12,Transfer-In,Successful,GCash,2165.5,France
+TX0047,C022,2026-08-14,Remittance,Successful,Bank,2435.75,Germany
+TX0048,C002,2026-09-16,Transfer-In,Successful,TyraTransfer,2705.0,Armenia
+TX0049,C013,2026-10-18,Deposit,Declined,Bank,2975.25,Georgia
+TX0050,C024,2026-01-20,Deposit,Successful,GCash,2860.5,India
+TX0051,C004,2026-02-22,Transfer-In,Successful,TyraTransfer,3130.75,United Kingdom
+TX0052,C015,2026-03-24,Remittance,Declined,PopoPay,3400.0,France
+TX0053,C026,2026-04-26,Withdrawal,Successful,GCash,220.25,Germany
+TX0054,C006,2026-05-01,Transfer-In,Successful,Bank,490.5,Armenia
+TX0055,C017,2026-06-03,Remittance,Successful,TyraTransfer,375.75,Georgia
+TX0056,C028,2026-07-05,Withdrawal,Declined,Bank,645.0,India
+TX0057,C008,2026-08-07,Remittance,Successful,PopoPay,915.25,United Kingdom
+TX0058,C019,2026-09-09,Remittance,Successful,TyraTransfer,1185.5,France
+TX0059,C030,2026-10-11,Transfer-In,Successful,PopoPay,1455.75,Germany
+TX0060,C010,2026-01-13,Withdrawal,Successful,Bank,1340.0,Armenia
