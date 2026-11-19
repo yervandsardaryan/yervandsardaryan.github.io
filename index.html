@@ -324,7 +324,7 @@
 <div id="sql-projects" class="project-category-heading project-sql-heading"><span>02 / QUERYING &amp; VALIDATION</span><h3>SQL &amp; Data Analysis</h3><p>Practice 15 business metrics and probability questions, 10 Excel and transaction-analysis exercises, and 7 SQL challenges with immediate answer feedback.</p></div><div class="sql-featured-card"><div class="sql-featured-content"><span class="sql-featured-kicker">INTERACTIVE SKILLS LAB · TEST YOUR KNOWLEDGE</span><h3>SQL, Excel &amp; Analytical Reasoning — Knowledge Checker</h3><p>Answer business profitability and statistics questions, solve Excel transaction problems, and execute SQL queries in a safe browser sandbox. Get instant correct / try-again feedback; answers stay hidden until you attempt them.</p><div class="sql-featured-tags"><span>15 Business &amp; Statistics</span><span>10 Excel Challenges</span><span>7 SQL Challenges</span><span>Interactive Checking</span></div><a href="sql-data-analysis.html" class="sql-featured-button">Launch SQL &amp; Data Analysis Quiz <span aria-hidden="true">↗</span></a></div><div class="sql-featured-code" aria-label="SQL query preview"><div class="sql-code-head"><span></span><span></span><span></span><small>query.sql</small></div><pre><code>SELECT Payment_Method,
        COUNT(*) AS Txn_Count,
        SUM(Amount) AS Total_Amount
-FROM transactions_current
+FROM transactions_hst
 WHERE Status = 'Successful'
 GROUP BY Payment_Method
 ORDER BY Total_Amount DESC;</code></pre><div class="sql-code-bottom">Enter your own SQL on the quiz page · Run against synthetic data</div></div></div>
