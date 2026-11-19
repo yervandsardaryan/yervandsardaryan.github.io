@@ -1,7 +1,7 @@
 /* Self-contained, safe worksheet parser: no eval, no user-supplied JavaScript execution. */
 'use strict';
 window.SheetLab=(()=>{
-const originalProducts=[{product:1,customers:220,bets:3520,turnover:10000,grossProfit:5140,bonus:200,transactionCost:10},{product:2,customers:100,bets:1000,turnover:12550,grossProfit:2550,bonus:300,transactionCost:22},{product:3,customers:125,bets:2300,turnover:24050,grossProfit:2000,bonus:250,transactionCost:20},{product:4,customers:102,bets:2541,turnover:25300,grossProfit:5530,bonus:550,transactionCost:8}];
+const originalProducts=[{product:1,customers:315,bets:4875,turnover:58240,grossProfit:14380,bonus:1140,transactionCost:245},{product:2,customers:184,bets:2416,turnover:41760,grossProfit:12950,bonus:1760,transactionCost:182},{product:3,customers:268,bets:6728,turnover:90350,grossProfit:22340,bonus:2580,transactionCost:398},{product:4,customers:146,bets:3149,turnover:77480,grossProfit:18470,bonus:2140,transactionCost:365}];
 let products=structuredClone(originalProducts), clients=[],origClients=[],solution={};
 const activeCells=new Set();
 const pCols=['product','customers','bets','turnover','grossProfit','bonus','transactionCost'];
