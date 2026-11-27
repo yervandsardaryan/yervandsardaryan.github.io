@@ -288,11 +288,31 @@
 .po-practice span{font-size:12px;font-weight:700;color:#d7f9ee;border:1px solid #487967;background:#173b3b;border-radius:100px;padding:6px 11px}
 .po-footnote{margin:17px 0 0;color:#a8c5d5;font-size:12px}
 @media(max-width:760px){.po-evidence{grid-template-columns:1fr}.po-feature{padding:22px 17px}.po-feature-head p{font-size:14px}}
+
+/* Case studies unified index */
+.cases-nav-group{display:flex;flex-direction:column;gap:4px}
+.cases-nav-group .nav-cases-first{font-weight:800;color:#f3f6fc}
+.cases-nav-submenu{display:flex;flex-direction:column;padding-left:15px;border-left:2px solid #27645f;margin:1px 0 3px 12px;gap:1px}
+.cases-nav-submenu a{font-size:12px;line-height:1.35;padding:7px 12px;color:#aec5d9}
+.cases-nav-submenu a:hover,.cases-nav-submenu a:focus-visible{color:#6de4c2;background:#1b3242;border-radius:7px}
+.cases-hub{background:#101d2d;padding:78px 0!important;border-top:1px solid #2e435a;border-bottom:1px solid #2e435a}
+.cases-hub .cases-eyebrow{letter-spacing:.15em;text-transform:uppercase;color:#58e1b6;font:800 11px Manrope,sans-serif}
+.cases-hub h2{font:800 clamp(30px,3.6vw,46px)/1.15 Manrope,sans-serif;margin:12px 0 15px}
+.cases-hub .cases-intro{color:#b6c7d8;max-width:770px;font-size:16px;margin:0 0 31px}
+.cases-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cases-card{display:flex;flex-direction:column;gap:11px;min-height:245px;padding:26px;background:#17283b;border:1px solid #385067;border-radius:18px;transition:transform .2s,border-color .2s}
+.cases-card:hover,.cases-card:focus-visible{transform:translateY(-3px);border-color:#58e1b6}
+.cases-card .cases-number{font:800 11px Manrope,sans-serif;color:#70e9c5;letter-spacing:.1em}
+.cases-card h3{font:800 22px/1.25 Manrope,sans-serif;margin:0;color:#f6f9fc}
+.cases-card p{font-size:14px;color:#b9cad9;line-height:1.6;margin:0;flex:1}
+.cases-card .cases-open{font-size:13px;color:#68e4c3;font-weight:750}
+@media(max-width:700px){.cases-cards{grid-template-columns:1fr}.cases-card{min-height:unset}}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a><div class="noise"></div>
-<header class="nav"><div class="container nav-inner"><a aria-label="Yervand Sardaryan home" class="logo" href="#analytics">YS<span>.</span></a><button aria-controls="nav-links" aria-expanded="false" class="menu" type="button">☰ Menu</button><nav aria-label="Main navigation" class="nav-links" id="nav-links"><div class="projects-nav-group"><a class="nav-projects-first" href="#analytics" aria-label="My Projects">✦ My Projects</a><div class="projects-nav-submenu" aria-label="Project categories"><a href="#powerbi-projects">Power BI Reporting</a><a href="#sql-projects">SQL &amp; Data Analysis</a></div></div><a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#product-ownership">Product Ownership</a><a href="#skills">Toolkit</a><a href="ba-knowledge-guide.html">Knowledge Guide</a><a href="#bpmn">BPMN</a><a href="#praemium">Data Aggregation</a><a href="#plat-ai">AI Decisioning</a><a href="#approach">Approach</a><a class="nav-contact" href="#contact">Let's connect ↗</a></nav></div></header>
+<header class="nav"><div class="container nav-inner"><a aria-label="Yervand Sardaryan home" class="logo" href="#analytics">YS<span>.</span></a><button aria-controls="nav-links" aria-expanded="false" class="menu" type="button">☰ Menu</button><nav aria-label="Main navigation" class="nav-links" id="nav-links"><div class="projects-nav-group"><a class="nav-projects-first" href="#analytics" aria-label="My Projects">✦ My Projects</a><div class="projects-nav-submenu" aria-label="Project categories"><a href="#powerbi-projects">Power BI Reporting</a><a href="#sql-projects">SQL &amp; Data Analysis</a></div></div><a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#product-ownership">Product Ownership</a><a href="#skills">Toolkit</a><a href="ba-knowledge-guide.html">Knowledge Guide</a><div class="cases-nav-group"><a class="nav-cases-first" href="#case-studies" aria-label="Case Studies">▦ Case Studies</a><div class="cases-nav-submenu" aria-label="Case study categories"><a href="#bpmn">ATM / BPMN</a><a href="#praemium">Data Aggregation</a><a href="#plat-ai">AI Decisioning</a><a href="stolen-card-blocking.html">Stolen Card Blocking</a></div></div><a href="#approach">Approach</a><a class="nav-contact" href="#contact">Let's connect ↗</a></nav></div></header>
 <main id="main">
 <section class="content project-showcase" id="analytics" aria-labelledby="projects-heading"><div class="container project-container">
 <div class="project-showcase-head"><div><div class="project-overline">YERVAND SARDARYAN / SELECTED WORK</div><h2 id="projects-heading">My Projects<span class="project-dot">.</span></h2><p>Explore my Power BI reporting and SQL analysis work—from analytical questions to interactive business insights.</p></div><div class="project-head-pill">4 <span>LIVE DASHBOARDS</span></div></div>
@@ -419,6 +439,19 @@ ORDER BY Total_Amount DESC;</code></pre><div class="sql-code-bottom">Enter your 
 <div class="skill-group"><h3>AI &amp; Automation</h3><ul><li>ChatGPT, Claude &amp; Cursor</li><li>AI/LLM-assisted requirements analysis</li><li>AI agents for BA workflow automation</li><li>Prompting, research &amp; synthesis</li><li>Document review &amp; productivity workflows</li><li>Critical thinking &amp; continuous improvement</li></ul></div>
 </div><p class="toolkit-footnote">For additional details, see my <a href="https://www.linkedin.com/in/yervandsardaryan/" rel="noopener noreferrer" target="_blank">LinkedIn profile ↗</a> or download my CV.</p></div></section>
 <section class="content" id="approach"><div class="container"><div class="section-head"><div class="section-kicker">05 / How I work</div><h2>From ambiguity to delivery</h2></div><div class="process-grid"><div class="process-card"><div class="num">01</div><h3>Understand</h3><p>Explore business goals, stakeholders, constraints, and the actual problem to solve.</p></div><div class="process-card"><div class="num">02</div><h3>Structure</h3><p>Model current and future processes, define requirements, and clarify edge cases.</p></div><div class="process-card"><div class="num">03</div><h3>Align</h3><p>Work with engineering and product teams on feasible solutions and acceptance criteria.</p></div><div class="process-card"><div class="num">04</div><h3>Validate</h3><p>Support testing, implementation, and production readiness with traceable outcomes.</p></div></div></div></section>
+
+
+<section class="content cases-hub" id="case-studies" aria-labelledby="case-studies-title"><div class="container">
+  <div class="cases-eyebrow">Business analysis · Systems thinking · Process design</div>
+  <h2 id="case-studies-title">Case Studies<span style="color:#58e1b6">.</span></h2>
+  <p class="cases-intro">Explore how I structure business requirements, model end-to-end processes, identify alternative flows and translate complexity into actionable delivery scenarios. Experience-based work and illustrative demonstrations are labeled separately.</p>
+  <div class="cases-cards">
+    <a class="cases-card" href="#bpmn"><span class="cases-number">01 / BPMN · ILLUSTRATIVE</span><h3>Cardless ATM Withdrawal</h3><p>A customer journey for secure, one-time-code ATM withdrawals, including process steps, exceptions and banking-system coordination.</p><span class="cases-open">Explore BPMN case study ↗</span></a>
+    <a class="cases-card" href="#praemium"><span class="cases-number">02 / FINANCIAL DATA · EXPERIENCE</span><h3>Financial Data Aggregation</h3><p>How third-party data feeds are onboarded, reconciled and delivered to downstream financial platforms, informed by professional experience.</p><span class="cases-open">Explore data case study ↗</span></a>
+    <a class="cases-card" href="#plat-ai"><span class="cases-number">03 / AI/ML PRODUCT · EXPERIENCE</span><h3>AI Decisioning &amp; Business Rules</h3><p>Turning requirements and predictive signals into configurable decisions and policy logic, based on product and BA experience.</p><span class="cases-open">Explore decisioning case study ↗</span></a>
+    <a class="cases-card" href="stolen-card-blocking.html"><span class="cases-number">04 / CARD LIFECYCLE · ILLUSTRATIVE</span><h3>Stolen Card Blocking</h3><p>A complete banking use case: preconditions, BPMN-style flow, successful and exceptional scenarios, postconditions, rules and Gherkin acceptance criteria.</p><span class="cases-open">Explore stolen-card use case ↗</span></a>
+  </div>
+</div></section>
 
 <section class="content" id="bpmn"><div class="container">
   <div class="section-kicker">07 / Business Process Modeling</div>
